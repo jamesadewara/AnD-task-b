@@ -1,0 +1,5 @@
+#!/bin/bash
+docker compose up --build -d
+echo "Task B started on http://127.0.0.1:8001"
+echo "Docs: http://127.0.0.1:8001/docs"
+echo "ReDoc: http://127.0.0.1:8001/redoc"

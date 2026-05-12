@@ -1,35 +1,9 @@
-version: '3.9'
 
 services:
-  app:
-    image: ${DOCKER_IMAGE:-reko-recommendation-backend:latest}
-    build:
-      context: .
-      target: production
-    container_name: reko_recommendation_backend_b
+  recommendation-engine:
+    build: .
     ports:
-      - "8002:8000"
-    environment:
-      DEBUG: "False"
-      PYTHONDONTWRITEBYTECODE: 1
-      PYTHONUNBUFFERED: 1
-    volumes:
-      - ./localstorage:/app/localstorage
-      - ./models:/app/models
-      - ./logs:/app/logs
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health/"]
-      interval: 30s
-      timeout: 10s
-      start_period: 60s
-      retries: 3
-    restart: unless-stopped
-    deploy:
-      resources:
-        limits:
-          memory: 4G
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "3"
+      - "8001:8001"
+    env_file:
+      - .env
+    restart: always

@@ -1,91 +1,70 @@
 import logging
-from typing import List
+from typing import List, Dict, Any
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 logger = logging.getLogger(__name__)
 
-
 class Settings(BaseSettings):
-    # ── Application ───────────────────────────────────────────────────────────
-    APP_NAME: str = "reko-ai-recommendation-system"
+    APP_NAME: str = "AnD-ai-recommendation-engine"
     DEBUG: bool = True
 
-    # ── Database (MongoDB via PyMongo + Beanie) ─────────────────────────────────
-    DATABASE_URL: str = Field(
-        default="mongodb://localhost:27017",
-        description="MongoDB connection URI"
-    )
-    DATABASE_NAME: str = "reko_ai_system_db"
-
-    # ── Auth — RS256 JWT Verification ─────────────────────────────────────────
-    # JWKS_URL: the /.well-known/jwks.json endpoint on reko-ai-auth-system
-    JWKS_URL: str = "http://localhost:8000/api/v1/.well-known/jwks.json"
-    JWT_ALGORITHM: str = "RS256"
-    # JWT_PUBLIC_KEY: RS256 public key in PEM format (set in env or provide file)
-    JWT_PUBLIC_KEY: str = ""
-    JWT_PUBLIC_KEY_PATH: str = "app/certs/public.pem"
-    # INTERNAL_SERVICE_SECRET: shared secret for service-to-service calls
-    INTERNAL_SERVICE_SECRET: str = ""
-
-    # ── Service Mesh URLs ─────────────────────────────────────────────────────
-    REKO_AI_AUTH_URL: str = "http://localhost:8000"
-    REKO_AI_SYSTEM_URL: str = "http://localhost:8001"
-    REKO_AI_FRONTEND_URL: str = "http://localhost:3000"
-
-    RABBITMQ_URL: str = "amqp://guest:guest@localhost:5672/"
-
-    # ── CORS ──────────────────────────────────────────────────────────────────
-    CORS_ALLOWED_ORIGINS: str = (
-        "http://localhost:3000,http://localhost:8000,"
-        "http://localhost:8001"
-    )
-
-    TAVILY_API_KEY: str = Field(
-        default="",
-        description="Tavily API Key for web scraping"
-    )
-    SERPER_API_KEY: str = Field(default="", 
-    description="")
-
-    DEEPSEEK_API_KEY: str = Field(
-        default="",
-        description="DeepSeek API Key"
-    )
     OPENROUTER_API_KEY: str = Field(
-        default="",
+        ...,
         description="OpenRouter API Key"
     )
-    LITELLM_MODEL_PRIMARY: str = "deepseek/deepseek-chat"
-    LITELLM_MODEL_FALLBACK: str = "openrouter/google/gemini-2.0-flash-exp:free"
-    
-    SPACY_MODEL: str = "en_core_web_md"
-    SENTENCE_TRANSFORMER_MODEL: str = "all-MiniLM-L6-v2"
-    
-    FAISS_INDEX_PATH: str = "./models/faiss.index"
-    LOCAL_STORAGE_PATH: str = "./localstorage"
-    S3_BUCKET: str = "reko-ai-storage"
-    SUPABASE_URL: str = Field(default="", description="Supabase project URL")
-    SUPABASE_KEY: str = Field(default="", description="Supabase project API key")
-    
-    TEMP_MODEL_CLEANUP_CRON: str = Field(
-        default="0 0 * * *", 
-        description="Cron expression for cleaning up temp models"
-    )
-    
-    USER_REFRESH_CRON: str = Field(
-        default="0 1 * * *", 
-        description="Cron expression for daily user profile refresh (Retraining)"
-    )
+    LITELLM_MODEL_PRIMARY: str = "z-ai/glm-4.5-air:free"
+    LITELLM_FALLBACK_MODELS: list[str] = [
+        "nvidia/nemotron-3-nano-30b-a3b:free",
+        "google/gemma-4-31b-it:free"
+    ]
 
-    HF_TOKEN: str = Field(
-        default="",
-        description="Hugging Face API Token"
-    )
-    
-    MAX_CORPUS_LENGTH: int = 50000
+    MAX_TOKENS: int = 1024
 
-    SUPPORT_EMAIL: str = "jamesadewara1@gmail.com"
+    # Occasion mapping for keyword-based boosting
+    OCCASION_KEYWORDS: Dict[str, List[str]] = {
+        "date night": ["romance", "intimate", "exclusive"],
+        "business dinner": ["fine dining", "prestige", "exclusive"],
+        "party": ["spicy", "high-energy", "celebration"],
+        "movie night": ["nollywood", "comedy", "family"],
+        "quick dinner": ["quick", "fast", "value"],
+        "breakfast": ["breakfast", "morning", "light"]
+    }
+
+    # Archetype Profiles for Probabilistic Cold-Start
+    # Each profile defines 'ideal' values and 'weights' for different features
+    ARCHETYPE_PROFILES: Dict[str, Dict[str, Any]] = {
+        "haggler": {
+            "ideal_price_ratio": 0.4,  # Wants items at 40% of budget
+            "min_rating": 3.0,
+            "boost_keywords": ["budget-friendly", "value", "deal", "cheap"],
+            "sensitivity": 1.5
+        },
+        "big woman": {
+            "ideal_price_ratio": 0.9,  # Wants items near budget limit (status)
+            "min_rating": 4.5,
+            "boost_keywords": ["premium", "luxury", "high-end", "exclusive"],
+            "sensitivity": 2.0
+        },
+        "community": {
+            "ideal_price_ratio": 0.6,
+            "min_rating": 4.6,        # Highly driven by others' ratings
+            "boost_keywords": ["popular", "classic", "trusted", "trending"],
+            "sensitivity": 1.2
+        },
+        "default": {
+            "ideal_price_ratio": 0.7,
+            "min_rating": 4.0,
+            "boost_keywords": ["quality", "reliable"],
+            "sensitivity": 1.0
+        }
+    }
+
+    # Time of day based tag preferences
+    TIME_OF_DAY_PREFERENCES: Dict[str, List[str]] = {
+        "morning": ["breakfast"],
+        "night": ["nollywood", "movie", "dinner"]
+    }
 
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -93,10 +72,5 @@ class Settings(BaseSettings):
         extra="ignore",
         case_sensitive=True
     )
-
-    @property
-    def cors_origins_list(self) -> List[str]:
-        return [o.strip() for o in self.CORS_ALLOWED_ORIGINS.split(",") if o.strip()]
-
 
 settings = Settings()

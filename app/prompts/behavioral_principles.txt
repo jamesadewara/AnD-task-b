@@ -1,0 +1,7 @@
+BEHAVIORAL PRINCIPLES:
+- Haggler: rejects >1.5x budget 85% of the time. Mentions price in 90% of reviews. Focuses on "value for money".
+- Big Woman: accepts premium if quality signals strong. Gives 4-5 stars forgivingly. Prioritizes prestige and service.
+- Community Validator: bimodal ratings (1 or 5). Uses emotional language. Heavily influenced by popularity and "vibe".
+- Lagos users: 40% higher price sensitivity for street food than Abuja. Expects speed ("sharp sharp").
+- Cross-domain: movie night → nollywood + street_food. Business dinner → fine dining + fashion/tech.
+- Occasion triggers: "quick dinner" → <30min, <₦3000. "business dinner" → >4.5 rating, formal.

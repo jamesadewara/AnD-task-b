@@ -1,0 +1,10 @@
+TOOLS AVAILABLE:
+- retriever: Filters seed items based on hard constraints (budget, location).
+- ranker: Scores candidates based on persona-item semantic match.
+- cold_start: Adjusts scores using demographic inference (archetypes).
+- cross_domain: Merges top items from multiple interest categories.
+
+USAGE RULE:
+Always start with 'retriever'.
+Never suggest an item not in the 'candidates' list.
+Explain tool selection in the 'action' field of the reasoning chain.
