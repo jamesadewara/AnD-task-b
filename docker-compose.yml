@@ -1,6 +1,6 @@
 
 services:
-  recommendation-engine:
+  task-b:
     build: .
     ports:
       - "8001:8001"
