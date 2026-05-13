@@ -28,6 +28,9 @@ async def lifespan(app: FastAPI):
         logger.info("🏁 [Lifespan] Cleanup complete.")
 
  
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
+
 app = FastAPI(
     title=f"{settings.APP_NAME} - Task B",
     description="DSN X BCT LLM Agent Challenge - Task B: Contextual Recommendation",
@@ -35,6 +38,15 @@ app = FastAPI(
     docs_url="/docs",
     redoc_url=None,
     lifespan=lifespan,
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.CORS_ALLOWED_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+    expose_headers=["*"],
 )
 
 app.add_middleware(GZipMiddleware, minimum_size=1000)
@@ -62,12 +74,28 @@ async def redoc_html():
 </html>
 """)
 
-@app.get("/health")
+@app.get("/api/v1/health")
 async def health_check():
     return {
         "status": "ok", 
         "service": "task-b-recommendation",
     }
+
+@app.get("/api/v1/health/stream")
+async def health_stream():
+    from fastapi.responses import StreamingResponse
+    import json
+    import asyncio
+    
+    async def heartbeat():
+        try:
+            while True:
+                yield f"data: {json.dumps({'status': 'ok', 'service': 'task-b'})}\n\n"
+                await asyncio.sleep(15)
+        except asyncio.CancelledError:
+            logger.info("Health stream for Task B closed.")
+            
+    return StreamingResponse(heartbeat(), media_type="text/event-stream")
 
 @app.get("/", include_in_schema=False)
 async def root():

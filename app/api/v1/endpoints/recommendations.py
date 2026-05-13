@@ -6,6 +6,28 @@ from app.agents.recommend_agent import RecommendAgent
 
 router = APIRouter()
 
+from fastapi.responses import StreamingResponse
+import json
+import asyncio
+
+@router.post(
+    "/stream",
+    summary="Get personalized recommendations with SSE streaming",
+    description="Streams reasoning steps and the final result as SSE events."
+)
+async def get_recommendations_stream(request: RecommendRequest):
+    agent = RecommendAgent()
+    
+    async def event_generator():
+        try:
+            async for event in agent.recommend_streaming(request.user_persona, request.context):
+                yield f"event: {event['event']}\ndata: {json.dumps(event['data'])}\n\n"
+        except Exception as e:
+            logger.error(f"Streaming error: {e}")
+            yield f"event: error\ndata: {json.dumps({'detail': str(e)})}\n\n"
+
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
+
 @router.post(
     "/",
     response_model=RecommendationResponse,

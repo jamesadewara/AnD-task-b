@@ -8,52 +8,71 @@ class Ranker:
         scored = []
         preferred = [p.lower() for p in analysis.get("preferred_categories", [])]
         priorities = [p.lower() for p in analysis.get("priorities", [])]
+        user_interests = [i.lower() for i in (user_persona.interests or [])]
         budget = user_persona.budget or 10000
+        archetype = str(user_persona.archetype or "").lower()
         
         for item in candidates:
-            score = item["rating"] * 2 # Base score: 0-10
+            score = item["rating"] * 2.0 # Base score: 0-10
             
-            # Category match
+            # 1. CATEGORY & INTEREST ALIGNMENT
             if item["category"].lower() in preferred:
-                score += 5
+                score += 8.0 # Stronger category boost
             
-            # Tag match with priorities from CoT
-            for tag in item["tags"]:
-                if any(p in tag.lower() for p in priorities):
-                    score += 2
+            # Direct interest match in tags or name
+            item_tags = [t.lower() for t in item["tags"]]
+            if any(i in item_tags or i in item["name"].lower() for i in user_interests):
+                score += 4.0
+
+            # 2. TAG MATCH WITH LLM PRIORITIES
+            for tag in item_tags:
+                if any(p in tag for p in priorities):
+                    score += 3.0
             
-            # Price alignment logic
+            # 3. ARCHETYPE-SPECIFIC PRICE LOGIC
             ratio = item["price_naira"] / budget if budget > 0 else 1
-            if ratio <= 0.3:
-                score += 4 # Extremely affordable
-            elif ratio <= 0.6:
-                score += 2 # Very affordable
-            elif ratio <= 1.0:
-                score += 1 # Within budget
-            elif ratio <= 1.5:
-                score -= 1 # Slightly over
+            if "haggler" in archetype:
+                # Hagglers love cheap, hate anything near or over budget
+                if ratio <= 0.3: score += 10.0
+                elif ratio <= 0.6: score += 5.0
+                elif ratio <= 1.0: score += 1.0
+                else: score -= 15.0 # Severe penalty for over-budget
+            elif any(t in archetype for t in ["big woman", "big man", "prestige"]):
+                # Prestige users favor luxury over price, but within a reasonable band
+                if any(t in item_tags for t in ["luxury", "exclusive", "premium", "bespoke"]):
+                    score += 12.0
+                if ratio > 1.2: score -= 2.0 # Slight penalty only
             else:
-                score -= 3 # Way over budget
+                # Default price logic
+                if ratio <= 0.6: score += 4.0
+                elif ratio <= 1.0: score += 2.0
+                elif ratio <= 1.5: score -= 5.0
             
-            # Location boost
-            if context.location and context.location.lower() in item["location"].lower():
-                score += 2
+            # 4. LOCATION RELEVANCE (CULTURALLY INTELLIGENT)
+            ctx_loc = (context.location or "").lower()
+            item_loc = item["location"].lower()
+            if ctx_loc == item_loc:
+                score += 15.0 # HUGE boost for local city match
+            elif ctx_loc in item_loc or item_loc in ctx_loc:
+                score += 8.0 # Strong boost for partial match (e.g. Lagos vs Ikeja)
+            elif item_loc == "nigeria":
+                score += 3.0 # Nationwide availability
             
-            # Occasion boost (using OCCASION_KEYWORDS from config)
+            # 5. OCCASION & TIME-OF-DAY INTELLIGENCE
             occasion = (context.occasion or "").lower()
-            occasion_map = settings.OCCASION_KEYWORDS
+            tod = (context.time_of_day or "").lower()
             
+            # Check situational tags (morning, evening, etc.)
+            if tod in item_tags:
+                score += 6.0
+            
+            # Occasion keyword mapping
+            occasion_map = settings.OCCASION_KEYWORDS
             for occ, keywords in occasion_map.items():
                 if occ in occasion:
-                    item_tags = [t.lower() for t in item["tags"]]
                     if any(k.lower() in item_tags for k in keywords):
-                        score += 3
+                        score += 8.0
                     break
-            
-            # Time of day awareness
-            tod = (context.time_of_day or "").lower()
-            if tod == "morning" and "breakfast" in [t.lower() for t in item["tags"]]:
-                score += 2
             
             scored.append({**item, "score": round(max(0, score), 2)})
         

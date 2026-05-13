@@ -1,13 +1,20 @@
-import logging
-from typing import List, Dict, Any
-from pydantic import Field
+from typing import List, Dict, Any, Union
+from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
-
-logger = logging.getLogger(__name__)
 
 class Settings(BaseSettings):
     APP_NAME: str = "AnD-ai-recommendation-engine"
     DEBUG: bool = True
+    CORS_ALLOWED_ORIGINS: Union[list[str], str] = ["http://localhost:3000", "http://127.0.0.1:3000"]
+
+    @field_validator("CORS_ALLOWED_ORIGINS", mode="before")
+    @classmethod
+    def assemble_cors_origins(cls, v: Any) -> list[str]:
+        if isinstance(v, str) and not v.startswith("["):
+            return [i.strip() for i in v.split(",")]
+        elif isinstance(v, (list, str)):
+            return v
+        return ["http://localhost:3000"]
 
     OPENROUTER_API_KEY: str = Field(
         ...,
