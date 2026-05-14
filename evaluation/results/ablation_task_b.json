@@ -1,0 +1,30 @@
+{
+  "Full System": {
+    "ndcg_at_10": 0.969,
+    "std_ndcg": 0.034,
+    "hit_rate_at_3": 0.96,
+    "avg_diversity": 3,
+    "samples": 50
+  },
+  "w/o Location Boost": {
+    "ndcg_at_10": 0.978,
+    "std_ndcg": 0.031,
+    "hit_rate_at_3": 0.96,
+    "avg_diversity": 2.08,
+    "samples": 50
+  },
+  "w/o Cold Start": {
+    "ndcg_at_10": 0.955,
+    "std_ndcg": 0.052,
+    "hit_rate_at_3": 0.9,
+    "avg_diversity": 3.38,
+    "samples": 50
+  },
+  "w/o Occasion Matching": {
+    "ndcg_at_10": 0.971,
+    "std_ndcg": 0.036,
+    "hit_rate_at_3": 0.96,
+    "avg_diversity": 3.1,
+    "samples": 50
+  }
+}
