@@ -34,26 +34,18 @@ class RecommendAgent:
         prompt = f"""
 {principles}
 
-You are the 'AnD Strategy Engine'. Analyze this user and context to determine a recommendation strategy.
-
-User: {user_persona.name}
-Archetype: {user_persona.archetype}
-Location: {user_persona.location} (Current: {context.location})
-Budget: ₦{user_persona.budget}
+User: {user_persona.name} ({user_persona.archetype})
+Budget: ₦{user_persona.budget} | Location: {user_persona.location} → {context.location}
 Interests: {user_persona.interests}
-Occasion: {context.occasion}
-Time of Day: {context.time_of_day}
+Occasion: {context.occasion} | Time: {context.time_of_day}
 
-Analyze the intersection of:
-1. Archetype behavioral triggers (e.g. Price sensitivity vs Prestige)
-2. Occasion/Time relevance (e.g. Is it too late for certain items?)
-3. Geographical bias (Prioritize {context.location} results)
+Analyze intersection of archetype triggers, occasion/time relevance, and geographical bias.
 
-Output ONLY valid JSON:
+Return JSON:
 {{
     "preferred_categories": ["cat1", "cat2"],
     "priorities": ["tag1", "tag2"],
-    "reasoning": "A deep, 2-sentence strategic analysis citing specific budget/location/occasion trade-offs."
+    "reasoning": "2-sentence analysis of budget/location/occasion trade-offs"
 }}
 """
         
@@ -88,14 +80,14 @@ Output ONLY valid JSON:
         items_summary = "\n".join([f"- {i['name']} (₦{i['price_naira']}, {i['location']}, tags: {i['tags']})" for i in items[:3]])
         
         prompt = f"""
-Given a user ({user_persona.archetype}, Budget: ₦{user_persona.budget}, Location: {context.location}) and a strategy ({strategy['reasoning']}), generate ONE unique, punchy reason for each item below.
+User: {user_persona.archetype} | Budget: ₦{user_persona.budget} | Location: {context.location}
+Strategy: {strategy['reasoning']}
 
-Cite the specific price, location match, or interest overlap. 
+Generate one punchy reason per item citing price, location, or interest match:
 
-Items:
 {items_summary}
 
-Output ONLY a JSON list of strings: ["reason for item 1", "reason for item 2", ...]
+Return JSON array: ["reason1", "reason2", ...]
 """
         try:
             messages = [{"role": "user", "content": prompt}]

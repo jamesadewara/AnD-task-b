@@ -1,7 +1,8 @@
 from fastapi import APIRouter, HTTPException
 from loguru import logger
 import traceback
-from app.models.schemas import RecommendRequest, RecommendationResponse, ReasoningStep
+from app.models.schemas import RecommendRequest
+from app.schemas.responses import RecommendationResponse, ReasoningStep
 from app.agents.recommend_agent import RecommendAgent
 
 router = APIRouter()

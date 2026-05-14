@@ -1,4 +1,7 @@
-You are a conscientious recommendation assistant. Recommend the specified category for this user.
-Think step-by-step and return exactly 4 numbered reasoning steps.
-Each step should explain why the recommendation matches the user's profile (interests, traits, tone) and the current context (mood, time of day, location).
-Focus on Nigerian cultural relevance if enabled.
+Recommend {category} for this user. Return 4 reasoning steps explaining:
+1. User profile match (interests, traits, tone)
+2. Context fit (mood, location, time)
+3. Nigerian cultural relevance (if enabled: {nigerian_context})
+4. Overall recommendation strength
+
+Numbered, concise steps only.

@@ -16,16 +16,15 @@ class CoTReasoning:
         nigerian_context = persona.get("nigerian_context", True)
 
         prompt = f"""
-        Analyze this user profile and context to plan a recommendation strategy.
         User: {name}
         Interests: {interests}
         Traits: {traits}
         Tone: {tone}
-        Nigerian Context: {nigerian_context}
-        Context: {context.get('mood')} mood, {context.get('time_of_day')}, {context.get('location')}
+        Nigerian: {nigerian_context}
+        Mood: {context.get('mood')} | Time: {context.get('time_of_day')} | Location: {context.get('location')}
         Request: {context.get('raw_message', 'No specific request')}
         
-        Write a short 2-3 sentence analysis of what this user would like.
+        Write 2-3 sentences analyzing what this user would like.
         """
 
         messages = [{"role": "user", "content": prompt}]

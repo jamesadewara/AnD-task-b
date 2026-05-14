@@ -23,26 +23,3 @@ class Context(BaseModel):
 class RecommendRequest(BaseModel):
     user_persona: UserPersona
     context: Context
-
-class RecommendationItem(BaseModel):
-    item_id: str
-    name: str
-    category: str
-    price_naira: float
-    rating: float
-    location: str
-    tags: List[str]
-    score: float = 0.0
-    reason: str = ""
-
-class ReasoningStep(BaseModel):
-    step: str
-    action: str
-    output: str
-
-class RecommendationResponse(BaseModel):
-    recommendations: List[RecommendationItem]
-    reasoning_chain: List[ReasoningStep]
-    confidence: float
-    cold_start_used: bool
-    cross_domain: bool
