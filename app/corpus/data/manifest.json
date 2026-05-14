@@ -1,0 +1,19 @@
+{
+  "source": "merged_seed_yelp",
+  "task_a": {
+    "items": 59,
+    "reference_review_entries": 59,
+    "seed_items": 59,
+    "yelp_items": 0
+  },
+  "task_b": {
+    "items": 173,
+    "ground_truth_pairs": 7846,
+    "personas": 1734,
+    "cold_start_fixtures": 200,
+    "seed_items": 173,
+    "yelp_items": 0,
+    "faiss_index": "faiss_flat_index.bin",
+    "embedding_model": "all-MiniLM-L6-v2"
+  }
+}

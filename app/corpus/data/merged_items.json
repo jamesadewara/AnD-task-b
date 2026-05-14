@@ -1,0 +1,3465 @@
+[
+  {
+    "item_id": "sf_001",
+    "name": "Mama Bose Jollot Rice + Fried Plantain",
+    "category": "street_food",
+    "price_naira": 800,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "budget",
+      "lunch",
+      "quick",
+      "spicy"
+    ],
+    "description": "Smoky roadside rice, extra fried plantain, Lagos Island hustle fuel.",
+    "review_count": 1200,
+    "cross_domain_tags": [
+      "work",
+      "budget",
+      "commute"
+    ]
+  },
+  {
+    "item_id": "sf_002",
+    "name": "Agege Bread + Akara",
+    "category": "street_food",
+    "price_naira": 500,
+    "rating": 4.3,
+    "location": "Lagos",
+    "tags": [
+      "breakfast",
+      "cheap",
+      "morning"
+    ],
+    "description": "Soft Agege bread with fresh akara, popular at bus stops before 7am.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "morning",
+      "commute",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "sf_003",
+    "name": "Ibadan Amala + Ewedu + Gbegiri",
+    "category": "street_food",
+    "price_naira": 1200,
+    "rating": 4.7,
+    "location": "Ibadan",
+    "tags": [
+      "swallow",
+      "lunch",
+      "traditional"
+    ],
+    "description": "Oyo state original: three soups combo with smooth amala, very filling.",
+    "review_count": 650,
+    "cross_domain_tags": [
+      "culture",
+      "tradition",
+      "heritage"
+    ]
+  },
+  {
+    "item_id": "sf_004",
+    "name": "Maiduguri Suya (Cowhide)",
+    "category": "street_food",
+    "price_naira": 1500,
+    "rating": 4.8,
+    "location": "Maiduguri",
+    "tags": [
+      "spicy",
+      "northern",
+      "beef",
+      "evening"
+    ],
+    "description": "Yaji-covered kundi (cowhide), chewy and smoky, northern classic.",
+    "review_count": 430,
+    "cross_domain_tags": [
+      "nightlife",
+      "snack",
+      "travel"
+    ]
+  },
+  {
+    "item_id": "sf_005",
+    "name": "Warri Bole + Fish + Peppersoup",
+    "category": "street_food",
+    "price_naira": 1800,
+    "rating": 4.9,
+    "location": "Warri",
+    "tags": [
+      "seafood",
+      "spicy",
+      "dinner"
+    ],
+    "description": "Grilled plantain with catfish and clear peppery soup. Delta specialty.",
+    "review_count": 720,
+    "cross_domain_tags": [
+      "seafood",
+      "social",
+      "weekend"
+    ]
+  },
+  {
+    "item_id": "sf_006",
+    "name": "Kano Massa + Kuli Kuli",
+    "category": "street_food",
+    "price_naira": 600,
+    "rating": 4.4,
+    "location": "Kano",
+    "tags": [
+      "snack",
+      "sweet",
+      "breakfast"
+    ],
+    "description": "Hausa rice cakes with groundnut snack, sold near mosques.",
+    "review_count": 380,
+    "cross_domain_tags": [
+      "religion",
+      "morning",
+      "culture"
+    ]
+  },
+  {
+    "item_id": "sf_007",
+    "name": "Nnewi Abacha + Ugba (Full)",
+    "category": "street_food",
+    "price_naira": 1500,
+    "rating": 4.8,
+    "location": "Nnewi",
+    "tags": [
+      "local",
+      "spicy",
+      "vegetarian-option"
+    ],
+    "description": "African salad with garden eggs, ukpaka, palm oil, crayfish.",
+    "review_count": 520,
+    "cross_domain_tags": [
+      "culture",
+      "heritage",
+      "events"
+    ]
+  },
+  {
+    "item_id": "sf_008",
+    "name": "Lagos Island Puff Puff (Big Mama)",
+    "category": "street_food",
+    "price_naira": 200,
+    "rating": 4.6,
+    "location": "Lagos Island",
+    "tags": [
+      "snack",
+      "cheap",
+      "quick"
+    ],
+    "description": "5 pieces for N200, crispy outside fluffy inside, student favorite.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "student",
+      "budget",
+      "evening"
+    ]
+  },
+  {
+    "item_id": "sf_009",
+    "name": "Benin City Bini Pepper Soup (Cowleg)",
+    "category": "street_food",
+    "price_naira": 2000,
+    "rating": 4.7,
+    "location": "Benin City",
+    "tags": [
+      "soup",
+      "spicy",
+      "dinner"
+    ],
+    "description": "Edo thick pepper soup with tender cowleg and native spices.",
+    "review_count": 410,
+    "cross_domain_tags": [
+      "culture",
+      "social",
+      "dining"
+    ]
+  },
+  {
+    "item_id": "sf_010",
+    "name": "Abuja Gwarimpa Kilishi (Premium)",
+    "category": "street_food",
+    "price_naira": 3000,
+    "rating": 4.9,
+    "location": "Abuja",
+    "tags": [
+      "snack",
+      "northern",
+      "luxury-snack"
+    ],
+    "description": "Paper-thin spiced dried beef, vacuum-packed for Abuja elites.",
+    "review_count": 290,
+    "cross_domain_tags": [
+      "gift",
+      "travel",
+      "status"
+    ]
+  },
+  {
+    "item_id": "sf_011",
+    "name": "PH Bunker Rice + Stew + Plantain",
+    "category": "street_food",
+    "price_naira": 1000,
+    "rating": 4.4,
+    "location": "Port Harcourt",
+    "tags": [
+      "lunch",
+      "budget",
+      "work"
+    ],
+    "description": "Oil workers' lunch special, large portion, very heavy.",
+    "review_count": 850,
+    "cross_domain_tags": [
+      "work",
+      "commute",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "sf_012",
+    "name": "Owerri Nkwobi + Utazi + Palm Wine",
+    "category": "street_food",
+    "price_naira": 2500,
+    "rating": 4.8,
+    "location": "Owerri",
+    "tags": [
+      "evening",
+      "social",
+      "spicy"
+    ],
+    "description": "Spicy cow foot in clay pot with fresh palm wine.",
+    "review_count": 470,
+    "cross_domain_tags": [
+      "nightlife",
+      "social",
+      "culture"
+    ]
+  },
+  {
+    "item_id": "sf_013",
+    "name": "Kaduna Roasted Groundnuts + Coconut",
+    "category": "street_food",
+    "price_naira": 300,
+    "rating": 4.2,
+    "location": "Kaduna",
+    "tags": [
+      "snack",
+      "cheap",
+      "evening"
+    ],
+    "description": "Roadside roasted groundnuts with fresh coconut slices.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "budget",
+      "commute",
+      "students"
+    ]
+  },
+  {
+    "item_id": "sf_014",
+    "name": "Sabo Yaba Masa + Fish",
+    "category": "street_food",
+    "price_naira": 1200,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "breakfast",
+      "northern",
+      "student-area"
+    ],
+    "description": "Hausa rice cakes with fried tilapia, popular in UNILAG axis.",
+    "review_count": 410,
+    "cross_domain_tags": [
+      "student",
+      "breakfast",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "sf_015",
+    "name": "Enugu Ocha Ugba + Fresh Oil Bean",
+    "category": "street_food",
+    "price_naira": 1000,
+    "rating": 4.6,
+    "location": "Enugu",
+    "tags": [
+      "traditional",
+      "snack",
+      "local"
+    ],
+    "description": "Raw ugba with utazi, fresh palm oil, and garden eggs.",
+    "review_count": 330,
+    "cross_domain_tags": [
+      "heritage",
+      "culture",
+      "natural"
+    ]
+  },
+  {
+    "item_id": "sf_016",
+    "name": "Oshodi Ewa Agoyin + Agege Bread",
+    "category": "street_food",
+    "price_naira": 700,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "breakfast",
+      "spicy",
+      "very-cheap"
+    ],
+    "description": "Dark, smoky beans with pepper sauce, sold from dawn.",
+    "review_count": 1800,
+    "cross_domain_tags": [
+      "commute",
+      "work",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "sf_017",
+    "name": "Ijebu Ode Ofada Rice + Ayamase",
+    "category": "street_food",
+    "price_naira": 2000,
+    "rating": 4.9,
+    "location": "Ijebu Ode",
+    "tags": [
+      "traditional",
+      "premium",
+      "local"
+    ],
+    "description": "Unpolished rice with green peppery ayamase sauce. Ogun specialty.",
+    "review_count": 390,
+    "cross_domain_tags": [
+      "culture",
+      "status",
+      "events"
+    ]
+  },
+  {
+    "item_id": "sf_018",
+    "name": "Asaba Isi Ewu + Goat Head",
+    "category": "street_food",
+    "price_naira": 3500,
+    "rating": 4.8,
+    "location": "Asaba",
+    "tags": [
+      "luxury-street",
+      "spicy",
+      "evening"
+    ],
+    "description": "Full goat head in palm oil sauce, served at beer parlors.",
+    "review_count": 310,
+    "cross_domain_tags": [
+      "social",
+      "drinks",
+      "nightlife"
+    ]
+  },
+  {
+    "item_id": "sf_019",
+    "name": "Yenogoa Fresh Catfish Pepper Soup",
+    "category": "street_food",
+    "price_naira": 2500,
+    "rating": 4.9,
+    "location": "Yenagoa",
+    "tags": [
+      "seafood",
+      "soup",
+      "spicy"
+    ],
+    "description": "Fresh catfish, ata rodo, scent leaf, bayelsa style.",
+    "review_count": 290,
+    "cross_domain_tags": [
+      "seafood",
+      "travel",
+      "social"
+    ]
+  },
+  {
+    "item_id": "sf_020",
+    "name": "Zaria Fura da Nono",
+    "category": "street_food",
+    "price_naira": 400,
+    "rating": 4.5,
+    "location": "Zaria",
+    "tags": [
+      "drink",
+      "dairy",
+      "northern",
+      "healthy"
+    ],
+    "description": "Millet fermented milk drink, served in calabash, very cooling.",
+    "review_count": 480,
+    "cross_domain_tags": [
+      "morning",
+      "health",
+      "culture"
+    ]
+  },
+  {
+    "item_id": "nw_001",
+    "name": "A Tribe Called Judah",
+    "category": "nollywood",
+    "price_naira": 2000,
+    "rating": 4.9,
+    "location": "Lagos",
+    "tags": [
+      "comedy",
+      "drama",
+      "record-breaking"
+    ],
+    "description": "Funke Akindele's blockbuster: family, heist, and laughter.",
+    "review_count": 1500,
+    "cross_domain_tags": [
+      "family",
+      "movie-night",
+      "trending"
+    ]
+  },
+  {
+    "item_id": "nw_002",
+    "name": "King of Boys 2 (Full Series)",
+    "category": "nollywood",
+    "price_naira": 2500,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "thriller",
+      "political",
+      "kemi-adetiba"
+    ],
+    "description": "Eniola Salami returns: power, betrayal, Lagos underworld.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "politics",
+      "status",
+      "thriller"
+    ]
+  },
+  {
+    "item_id": "nw_003",
+    "name": "The Black Book",
+    "category": "nollywood",
+    "price_naira": 1800,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "action",
+      "revenge",
+      "netflix"
+    ],
+    "description": "Richard Mofe-Damijo in gritty revenge thriller.",
+    "review_count": 720,
+    "cross_domain_tags": [
+      "action",
+      "crime",
+      "netflix"
+    ]
+  },
+  {
+    "item_id": "nw_004",
+    "name": "Gangs of Lagos",
+    "category": "nollywood",
+    "price_naira": 1500,
+    "rating": 4.5,
+    "location": "Lagos Island",
+    "tags": [
+      "crime",
+      "prime",
+      "street"
+    ],
+    "description": "Isale Eko street life, raw and violent.",
+    "review_count": 640,
+    "cross_domain_tags": [
+      "crime",
+      "urban",
+      "youth"
+    ]
+  },
+  {
+    "item_id": "nw_005",
+    "name": "Brotherhood",
+    "category": "nollywood",
+    "price_naira": 1500,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "action",
+      "police",
+      "drama"
+    ],
+    "description": "Two brothers on opposite sides of the law.",
+    "review_count": 580,
+    "cross_domain_tags": [
+      "family",
+      "crime",
+      "action"
+    ]
+  },
+  {
+    "item_id": "nw_006",
+    "name": "Anikulapo (Return of Spectre)",
+    "category": "nollywood",
+    "price_naira": 2000,
+    "rating": 4.7,
+    "location": "Oyo",
+    "tags": [
+      "epic",
+      "fantasy",
+      "folklore"
+    ],
+    "description": "Continuation of Saro's journey through time.",
+    "review_count": 430,
+    "cross_domain_tags": [
+      "culture",
+      "heritage",
+      "spirituality"
+    ]
+  },
+  {
+    "item_id": "nw_007",
+    "name": "Battle on Buka Street",
+    "category": "nollywood",
+    "price_naira": 1500,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "comedy",
+      "family",
+      "food"
+    ],
+    "description": "Sister rivalry meets food competition.",
+    "review_count": 810,
+    "cross_domain_tags": [
+      "dining",
+      "family",
+      "comedy"
+    ]
+  },
+  {
+    "item_id": "nw_008",
+    "name": "Ijogbon",
+    "category": "nollywood",
+    "price_naira": 1200,
+    "rating": 4.4,
+    "location": "Kwara",
+    "tags": [
+      "adventure",
+      "youth",
+      "netflix"
+    ],
+    "description": "Four teenagers discover diamonds and chaos follows.",
+    "review_count": 320,
+    "cross_domain_tags": [
+      "youth",
+      "adventure",
+      "crime"
+    ]
+  },
+  {
+    "item_id": "nw_009",
+    "name": "Oloture (The Series)",
+    "category": "nollywood",
+    "price_naira": 1800,
+    "rating": 4.8,
+    "location": "Lagos/Benin",
+    "tags": [
+      "crime",
+      "drama",
+      "human-trafficking"
+    ],
+    "description": "Undercover journalist exposes trafficking rings.",
+    "review_count": 540,
+    "cross_domain_tags": [
+      "social",
+      "crime",
+      "journalism"
+    ]
+  },
+  {
+    "item_id": "nw_010",
+    "name": "The Wedding Party 2",
+    "category": "nollywood",
+    "price_naira": 1000,
+    "rating": 4.3,
+    "location": "Lagos/Dubai",
+    "tags": [
+      "comedy",
+      "romance",
+      "family"
+    ],
+    "description": "Destination wedding chaos continues.",
+    "review_count": 670,
+    "cross_domain_tags": [
+      "wedding",
+      "owambe",
+      "social"
+    ]
+  },
+  {
+    "item_id": "nw_011",
+    "name": "Citation",
+    "category": "nollywood",
+    "price_naira": 1200,
+    "rating": 4.6,
+    "location": "Lagos/Ife",
+    "tags": [
+      "drama",
+      "sexual-harassment",
+      "campus"
+    ],
+    "description": "Female student takes on professor. University setting.",
+    "review_count": 490,
+    "cross_domain_tags": [
+      "campus",
+      "justice",
+      "education"
+    ]
+  },
+  {
+    "item_id": "nw_012",
+    "name": "Namaste Wahala",
+    "category": "nollywood",
+    "price_naira": 1000,
+    "rating": 4.2,
+    "location": "Lagos/India",
+    "tags": [
+      "romance",
+      "cross-cultural",
+      "bollywood"
+    ],
+    "description": "Indian-Nigerian love story with family drama.",
+    "review_count": 380,
+    "cross_domain_tags": [
+      "romance",
+      "culture",
+      "wedding"
+    ]
+  },
+  {
+    "item_id": "nw_013",
+    "name": "Living in Bondage (2024 Sequel)",
+    "category": "nollywood",
+    "price_naira": 2000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "horror",
+      "cult",
+      "classic"
+    ],
+    "description": "Modern take on money rituals and consequences.",
+    "review_count": 460,
+    "cross_domain_tags": [
+      "horror",
+      "status",
+      "crime"
+    ]
+  },
+  {
+    "item_id": "nw_014",
+    "name": "Muri & Ko",
+    "category": "nollywood",
+    "price_naira": 1000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "comedy",
+      "crime",
+      "kunle-afolayan"
+    ],
+    "description": "Bumbling criminals on the run.",
+    "review_count": 550,
+    "cross_domain_tags": [
+      "comedy",
+      "crime",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "nw_015",
+    "name": "The Set Up 2",
+    "category": "nollywood",
+    "price_naira": 1500,
+    "rating": 4.4,
+    "location": "Lagos",
+    "tags": [
+      "crime",
+      "thriller",
+      "adrenaline"
+    ],
+    "description": "Female thief pulled back into the game.",
+    "review_count": 410,
+    "cross_domain_tags": [
+      "crime",
+      "female-lead",
+      "action"
+    ]
+  },
+  {
+    "item_id": "nw_016",
+    "name": "Afamefuna",
+    "category": "nollywood",
+    "price_naira": 1200,
+    "rating": 4.7,
+    "location": "Onitsha/Lagos",
+    "tags": [
+      "drama",
+      "business",
+      "igbo"
+    ],
+    "description": "The story of Onitsha market apprenticeships.",
+    "review_count": 370,
+    "cross_domain_tags": [
+      "business",
+      "culture",
+      "heritage"
+    ]
+  },
+  {
+    "item_id": "nw_017",
+    "name": "The Riverman",
+    "category": "nollywood",
+    "price_naira": 1300,
+    "rating": 4.6,
+    "location": "Bayelsa",
+    "tags": [
+      "documentary",
+      "environment",
+      "crime"
+    ],
+    "description": "Oil theft, pollution, and murder in the creeks.",
+    "review_count": 290,
+    "cross_domain_tags": [
+      "environment",
+      "crime",
+      "politics"
+    ]
+  },
+  {
+    "item_id": "nw_018",
+    "name": "Skinny Girl in Transit (Season 7)",
+    "category": "nollywood",
+    "price_naira": 2000,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "comedy",
+      "romance",
+      "body-image"
+    ],
+    "description": "Tiwa's journey continues in corporate Lagos.",
+    "review_count": 680,
+    "cross_domain_tags": [
+      "fashion",
+      "romance",
+      "work"
+    ]
+  },
+  {
+    "item_id": "nw_019",
+    "name": "Progressive Tailors Club",
+    "category": "nollywood",
+    "price_naira": 1000,
+    "rating": 4.3,
+    "location": "Lagos",
+    "tags": [
+      "comedy",
+      "brotherhood",
+      "fashion"
+    ],
+    "description": "Male friendship and tailoring shop drama.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "fashion",
+      "comedy",
+      "social"
+    ]
+  },
+  {
+    "item_id": "nw_020",
+    "name": "Blood Covenant",
+    "category": "nollywood",
+    "price_naira": 1500,
+    "rating": 4.5,
+    "location": "Enugu",
+    "tags": [
+      "horror",
+      "spiritual",
+      "eastern"
+    ],
+    "description": "Family curse and deliverance saga.",
+    "review_count": 420,
+    "cross_domain_tags": [
+      "religion",
+      "horror",
+      "heritage"
+    ]
+  },
+  {
+    "item_id": "el_001",
+    "name": "iPhone 15 Pro (Alakija Used)",
+    "category": "electronics",
+    "price_naira": 650000,
+    "rating": 4.3,
+    "location": "Lagos",
+    "tags": [
+      "used",
+      "premium",
+      "status"
+    ],
+    "description": "UK-used, battery 85%, Alakija market special.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "status",
+      "social",
+      "luxury"
+    ]
+  },
+  {
+    "item_id": "el_002",
+    "name": "Infinix Hot 40 (Brand New)",
+    "category": "electronics",
+    "price_naira": 145000,
+    "rating": 4.5,
+    "location": "Nigeria",
+    "tags": [
+      "budget",
+      "new",
+      "student"
+    ],
+    "description": "NYSC corps members' favorite phone.",
+    "review_count": 1200,
+    "cross_domain_tags": [
+      "student",
+      "budget",
+      "work"
+    ]
+  },
+  {
+    "item_id": "el_003",
+    "name": "Samsung Galaxy A15 (Fairly Used)",
+    "category": "electronics",
+    "price_naira": 120000,
+    "rating": 4.2,
+    "location": "Computer Village",
+    "tags": [
+      "used",
+      "mid-range",
+      "reliable"
+    ],
+    "description": "One-year UK used, clean screen, good battery.",
+    "review_count": 780,
+    "cross_domain_tags": [
+      "budget",
+      "work",
+      "reliable"
+    ]
+  },
+  {
+    "item_id": "el_004",
+    "name": "Nokia 110 (Torch Phone)",
+    "category": "electronics",
+    "price_naira": 25000,
+    "rating": 4.8,
+    "location": "Nigeria",
+    "tags": [
+      "rugged",
+      "basic",
+      "battery"
+    ],
+    "description": "One week battery, torchlight, market women's favorite.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "business",
+      "essential",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "el_005",
+    "name": "Oraimo Power Bank (30,000mAh)",
+    "category": "electronics",
+    "price_naira": 35000,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "nepa-solution",
+      "essential",
+      "value"
+    ],
+    "description": "Charges phone 7 times. Light and fan also.",
+    "review_count": 1500,
+    "cross_domain_tags": [
+      "commute",
+      "work",
+      "essential"
+    ]
+  },
+  {
+    "item_id": "el_006",
+    "name": "Binatone Stabilizer (2000W)",
+    "category": "electronics",
+    "price_naira": 65000,
+    "rating": 4.6,
+    "location": "Nigeria",
+    "tags": [
+      "nepa",
+      "protection",
+      "home"
+    ],
+    "description": "Protects fridge and TV from irregular power.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "home",
+      "essential",
+      "nepa"
+    ]
+  },
+  {
+    "item_id": "el_007",
+    "name": "Lontor Rechargeable Standing Fan",
+    "category": "electronics",
+    "price_naira": 55000,
+    "rating": 4.9,
+    "location": "Nigeria",
+    "tags": [
+      "nepa",
+      "cooling",
+      "essential"
+    ],
+    "description": "12-hour battery, remote control, light included.",
+    "review_count": 2300,
+    "cross_domain_tags": [
+      "home",
+      "nepa",
+      "summer"
+    ]
+  },
+  {
+    "item_id": "el_008",
+    "name": "Micom Solar Inverter (3.5KVA)",
+    "category": "electronics",
+    "price_naira": 850000,
+    "rating": 4.8,
+    "location": "Abuja",
+    "tags": [
+      "solar",
+      "luxury",
+      "no-nepa"
+    ],
+    "description": "Complete solar solution for bungalow.",
+    "review_count": 210,
+    "cross_domain_tags": [
+      "home",
+      "luxury",
+      "status"
+    ]
+  },
+  {
+    "item_id": "el_009",
+    "name": "Tecno Spark 20 Pro (New)",
+    "category": "electronics",
+    "price_naira": 220000,
+    "rating": 4.4,
+    "location": "Lagos",
+    "tags": [
+      "new",
+      "mid-range",
+      "camera"
+    ],
+    "description": "Best camera under 250k, popular with influencers.",
+    "review_count": 670,
+    "cross_domain_tags": [
+      "social",
+      "content",
+      "trending"
+    ]
+  },
+  {
+    "item_id": "el_010",
+    "name": "Hisense 43 Inch Smart TV",
+    "category": "electronics",
+    "price_naira": 280000,
+    "rating": 4.5,
+    "location": "Port Harcourt",
+    "tags": [
+      "tv",
+      "netflix",
+      "family"
+    ],
+    "description": "Youtube, Netflix, Prime ready. Parlor status.",
+    "review_count": 430,
+    "cross_domain_tags": [
+      "family",
+      "home",
+      "entertainment"
+    ]
+  },
+  {
+    "item_id": "el_011",
+    "name": "PS4 (Fairly Used)",
+    "category": "electronics",
+    "price_naira": 180000,
+    "rating": 4.4,
+    "location": "Lagos",
+    "tags": [
+      "gaming",
+      "used",
+      "youth"
+    ],
+    "description": "Two controllers, FIFA 24 included. Student lodge classic.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "gaming",
+      "student",
+      "social"
+    ]
+  },
+  {
+    "item_id": "el_012",
+    "name": "HP Laptop Core i5 (Used)",
+    "category": "electronics",
+    "price_naira": 220000,
+    "rating": 4.3,
+    "location": "Computer Village",
+    "tags": [
+      "laptop",
+      "work",
+      "used"
+    ],
+    "description": "UK-used, 8GB RAM, 256 SSD. For remote work.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "work",
+      "student",
+      "remote"
+    ]
+  },
+  {
+    "item_id": "el_013",
+    "name": "JBL PartyBox 110",
+    "category": "electronics",
+    "price_naira": 350000,
+    "rating": 4.9,
+    "location": "Lagos",
+    "tags": [
+      "speaker",
+      "party",
+      "loud"
+    ],
+    "description": "Owambe destroyer. Very loud, light effects.",
+    "review_count": 310,
+    "cross_domain_tags": [
+      "party",
+      "owambe",
+      "social"
+    ]
+  },
+  {
+    "item_id": "el_014",
+    "name": "Binatone Fridge (Double Door)",
+    "category": "electronics",
+    "price_naira": 380000,
+    "rating": 4.6,
+    "location": "Nigeria",
+    "tags": [
+      "home",
+      "essential",
+      "family"
+    ],
+    "description": "NEPA-friendly compressor, 1-year warranty.",
+    "review_count": 510,
+    "cross_domain_tags": [
+      "home",
+      "family",
+      "essential"
+    ]
+  },
+  {
+    "item_id": "el_015",
+    "name": "Itel P55 5G (New)",
+    "category": "electronics",
+    "price_naira": 165000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "5g",
+      "budget",
+      "new"
+    ],
+    "description": "Cheapest 5G phone in Nigeria right now.",
+    "review_count": 780,
+    "cross_domain_tags": [
+      "tech",
+      "budget",
+      "trending"
+    ]
+  },
+  {
+    "item_id": "el_016",
+    "name": "Nikon D3500 Camera (Used)",
+    "category": "electronics",
+    "price_naira": 280000,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "photography",
+      "wedding",
+      "work"
+    ],
+    "description": "Wedding photographers' starter camera.",
+    "review_count": 190,
+    "cross_domain_tags": [
+      "work",
+      "events",
+      "photography"
+    ]
+  },
+  {
+    "item_id": "el_017",
+    "name": "Nexus Gas Cooker (4 Burner)",
+    "category": "electronics",
+    "price_naira": 180000,
+    "rating": 4.6,
+    "location": "Nigeria",
+    "tags": [
+      "kitchen",
+      "cooking",
+      "home"
+    ],
+    "description": "Big oven, good for party Jollof.",
+    "review_count": 620,
+    "cross_domain_tags": [
+      "dining",
+      "home",
+      "events"
+    ]
+  },
+  {
+    "item_id": "el_018",
+    "name": "Scanfrost Chest Freezer",
+    "category": "electronics",
+    "price_naira": 250000,
+    "rating": 4.7,
+    "location": "Onitsha",
+    "tags": [
+      "business",
+      "storage",
+      "market"
+    ],
+    "description": "For frozen food sellers. Very rugged.",
+    "review_count": 440,
+    "cross_domain_tags": [
+      "business",
+      "market",
+      "essential"
+    ]
+  },
+  {
+    "item_id": "el_019",
+    "name": "Mojec Prepaid Meter (Single Phase)",
+    "category": "electronics",
+    "price_naira": 120000,
+    "rating": 4.9,
+    "location": "Nigeria",
+    "tags": [
+      "nepa",
+      "essential",
+      "home"
+    ],
+    "description": "Stop estimated billing forever. Disco approved.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "home",
+      "nepa",
+      "savings"
+    ]
+  },
+  {
+    "item_id": "el_020",
+    "name": "Starlink Hardware Kit",
+    "category": "electronics",
+    "price_naira": 440000,
+    "rating": 4.9,
+    "location": "Nigeria",
+    "tags": [
+      "internet",
+      "remote",
+      "luxury"
+    ],
+    "description": "Unlimited internet anywhere in Nigeria.",
+    "review_count": 180,
+    "cross_domain_tags": [
+      "work",
+      "remote",
+      "luxury"
+    ]
+  },
+  {
+    "item_id": "fs_001",
+    "name": "Lace Senator Outfit (Full)",
+    "category": "fashion",
+    "price_naira": 95000,
+    "rating": 4.8,
+    "location": "Abuja",
+    "tags": [
+      "formal",
+      "men",
+      "status"
+    ],
+    "description": "Embroidered French lace, matching hat and shoes.",
+    "review_count": 210,
+    "cross_domain_tags": [
+      "wedding",
+      "status",
+      "owambe"
+    ]
+  },
+  {
+    "item_id": "fs_002",
+    "name": "Aso Ebi (Ankara 6 Yards)",
+    "category": "fashion",
+    "price_naira": 18000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "asoebi",
+      "wedding",
+      "traditional"
+    ],
+    "description": "Heavy ankara with stone work. Popular for owambe.",
+    "review_count": 1200,
+    "cross_domain_tags": [
+      "wedding",
+      "social",
+      "owambe"
+    ]
+  },
+  {
+    "item_id": "fs_003",
+    "name": "Adire Casual Shirt (Male)",
+    "category": "fashion",
+    "price_naira": 25000,
+    "rating": 4.7,
+    "location": "Abeokuta",
+    "tags": [
+      "casual",
+      "cultural",
+      "handmade"
+    ],
+    "description": "Hand-dyed Abeokuta adire, very breathable.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "culture",
+      "casual",
+      "heritage"
+    ]
+  },
+  {
+    "item_id": "fs_004",
+    "name": "Italian Leather Derby Shoes",
+    "category": "fashion",
+    "price_naira": 85000,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "men",
+      "formal",
+      "luxury"
+    ],
+    "description": "Handmade in Lagos, Italian leather.",
+    "review_count": 120,
+    "cross_domain_tags": [
+      "work",
+      "status",
+      "wedding"
+    ]
+  },
+  {
+    "item_id": "fs_005",
+    "name": "Gold Plated Waist Beads (Ileke)",
+    "category": "fashion",
+    "price_naira": 15000,
+    "rating": 4.4,
+    "location": "Osogbo",
+    "tags": [
+      "female",
+      "traditional",
+      "beads"
+    ],
+    "description": "Yoruba waist beads with gold accents.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "culture",
+      "female",
+      "beauty"
+    ]
+  },
+  {
+    "item_id": "fs_006",
+    "name": "Cowrie Necklace (Royal)",
+    "category": "fashion",
+    "price_naira": 22000,
+    "rating": 4.6,
+    "location": "Benin City",
+    "tags": [
+      "royal",
+      "traditional",
+      "handmade"
+    ],
+    "description": "Edo royal cowrie design, heavy and authentic.",
+    "review_count": 180,
+    "cross_domain_tags": [
+      "culture",
+      "heritage",
+      "royal"
+    ]
+  },
+  {
+    "item_id": "fs_007",
+    "name": "Agbada (Premium Brocade)",
+    "category": "fashion",
+    "price_naira": 120000,
+    "rating": 4.9,
+    "location": "Kano",
+    "tags": [
+      "agbada",
+      "men",
+      "prestige"
+    ],
+    "description": "Northern-style flowing gown, wedding essential.",
+    "review_count": 250,
+    "cross_domain_tags": [
+      "wedding",
+      "status",
+      "northern"
+    ]
+  },
+  {
+    "item_id": "fs_008",
+    "name": "Senator Cap (Fila) Embroidered",
+    "category": "fashion",
+    "price_naira": 12000,
+    "rating": 4.5,
+    "location": "Ibadan",
+    "tags": [
+      "accessory",
+      "men",
+      "traditional"
+    ],
+    "description": "Gold-thread fila, holds shape well.",
+    "review_count": 780,
+    "cross_domain_tags": [
+      "owambe",
+      "men",
+      "status"
+    ]
+  },
+  {
+    "item_id": "fs_009",
+    "name": "Native Wrapper (George Fabric)",
+    "category": "fashion",
+    "price_naira": 45000,
+    "rating": 4.7,
+    "location": "Onitsha",
+    "tags": [
+      "female",
+      "traditional",
+      "luxury"
+    ],
+    "description": "Heavy George material, Igbo wedding staple.",
+    "review_count": 310,
+    "cross_domain_tags": [
+      "wedding",
+      "culture",
+      "luxury"
+    ]
+  },
+  {
+    "item_id": "fs_010",
+    "name": "Streetwear Cargo Jeans",
+    "category": "fashion",
+    "price_naira": 18000,
+    "rating": 4.3,
+    "location": "Lagos",
+    "tags": [
+      "streetwear",
+      "youth",
+      "casual"
+    ],
+    "description": "Oversized, many pockets, Gen Z favorite.",
+    "review_count": 1100,
+    "cross_domain_tags": [
+      "youth",
+      "streetwear",
+      "social"
+    ]
+  },
+  {
+    "item_id": "fs_011",
+    "name": "Lagos Crocs (Dupe)",
+    "category": "fashion",
+    "price_naira": 5000,
+    "rating": 4.2,
+    "location": "Lagos",
+    "tags": [
+      "footwear",
+      "budget",
+      "casual"
+    ],
+    "description": "Side market special, very comfortable.",
+    "review_count": 2300,
+    "cross_domain_tags": [
+      "budget",
+      "casual",
+      "student"
+    ]
+  },
+  {
+    "item_id": "fs_012",
+    "name": "Designer Handbag (Fake Gucci)",
+    "category": "fashion",
+    "price_naira": 45000,
+    "rating": 4.1,
+    "location": "Lagos",
+    "tags": [
+      "fake",
+      "luxury-look",
+      "female"
+    ],
+    "description": "Grade A replica, Alaba market special.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "status",
+      "female",
+      "budget-luxury"
+    ]
+  },
+  {
+    "item_id": "fs_013",
+    "name": "Beaded Crown (Ade)",
+    "category": "fashion",
+    "price_naira": 65000,
+    "rating": 4.9,
+    "location": "Benin",
+    "tags": [
+      "royal",
+      "traditional",
+      "ceremony"
+    ],
+    "description": "Oba-style beaded crown, for chiefs.",
+    "review_count": 65,
+    "cross_domain_tags": [
+      "royal",
+      "status",
+      "culture"
+    ]
+  },
+  {
+    "item_id": "fs_014",
+    "name": "Customized T-shirt (Nigeria Flag)",
+    "category": "fashion",
+    "price_naira": 7000,
+    "rating": 4.4,
+    "location": "Lagos",
+    "tags": [
+      "casual",
+      "patriotic",
+      "streetwear"
+    ],
+    "description": "Super Eagles style, popular during matches.",
+    "review_count": 1450,
+    "cross_domain_tags": [
+      "sports",
+      "patriotism",
+      "youth"
+    ]
+  },
+  {
+    "item_id": "fs_015",
+    "name": "Lace Boubou (Kaftan)",
+    "category": "fashion",
+    "price_naira": 55000,
+    "rating": 4.6,
+    "location": "Abuja",
+    "tags": [
+      "female",
+      "comfort",
+      "status"
+    ],
+    "description": "Rich auntie style, flowy and elegant.",
+    "review_count": 290,
+    "cross_domain_tags": [
+      "social",
+      "female",
+      "luxury"
+    ]
+  },
+  {
+    "item_id": "fs_016",
+    "name": "Iroko Wood Beads (Men)",
+    "category": "fashion",
+    "price_naira": 8000,
+    "rating": 4.5,
+    "location": "Ibadan",
+    "tags": [
+      "accessory",
+      "men",
+      "spiritual"
+    ],
+    "description": "Natural iroko beads, very common with politicians.",
+    "review_count": 670,
+    "cross_domain_tags": [
+      "politics",
+      "status",
+      "spiritual"
+    ]
+  },
+  {
+    "item_id": "fs_017",
+    "name": "Hijab with Stone Work",
+    "category": "fashion",
+    "price_naira": 18000,
+    "rating": 4.7,
+    "location": "Kano",
+    "tags": [
+      "hijab",
+      "northern",
+      "female"
+    ],
+    "description": "Crystal-studded hijab, wedding special.",
+    "review_count": 410,
+    "cross_domain_tags": [
+      "religion",
+      "wedding",
+      "northern"
+    ]
+  },
+  {
+    "item_id": "fs_018",
+    "name": "Ankara Gown (Mermaid Style)",
+    "category": "fashion",
+    "price_naira": 35000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "female",
+      "owambe",
+      "ankara"
+    ],
+    "description": "Fitted Ankara, church and owambe favorite.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "church",
+      "owambe",
+      "female"
+    ]
+  },
+  {
+    "item_id": "fs_019",
+    "name": "Native Beaded Slippers",
+    "category": "fashion",
+    "price_naira": 15000,
+    "rating": 4.5,
+    "location": "Onitsha",
+    "tags": [
+      "footwear",
+      "traditional",
+      "wedding"
+    ],
+    "description": "Beaded slippers for asoebi members.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "wedding",
+      "female",
+      "traditional"
+    ]
+  },
+  {
+    "item_id": "fs_020",
+    "name": "Men's Wrist Beads (Coral)",
+    "category": "fashion",
+    "price_naira": 25000,
+    "rating": 4.8,
+    "location": "Benin",
+    "tags": [
+      "accessory",
+      "men",
+      "royal"
+    ],
+    "description": "Original Benin coral beads for men.",
+    "review_count": 180,
+    "cross_domain_tags": [
+      "royal",
+      "status",
+      "culture"
+    ]
+  },
+  {
+    "item_id": "dn_001",
+    "name": "Bukka Hut (Rice + Stew + Fish)",
+    "category": "dining",
+    "price_naira": 3000,
+    "rating": 4.4,
+    "location": "Lagos",
+    "tags": [
+      "fast-food",
+      "local",
+      "lunch"
+    ],
+    "description": "Reliable office lunch, many branches.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "work",
+      "lunch",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "dn_002",
+    "name": "Kilimanjaro (Chicken + Chips)",
+    "category": "dining",
+    "price_naira": 3500,
+    "rating": 4.3,
+    "location": "Nigeria",
+    "tags": [
+      "fast-food",
+      "quick",
+      "family"
+    ],
+    "description": "Student and worker classic.",
+    "review_count": 3400,
+    "cross_domain_tags": [
+      "fast-food",
+      "budget",
+      "work"
+    ]
+  },
+  {
+    "item_id": "dn_003",
+    "name": "The Place (Asun + Fried Rice)",
+    "category": "dining",
+    "price_naira": 4500,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "fast-food",
+      "spicy",
+      "lunch"
+    ],
+    "description": "Spicy goat meat with fried rice. Very popular.",
+    "review_count": 2800,
+    "cross_domain_tags": [
+      "work",
+      "lunch",
+      "spicy"
+    ]
+  },
+  {
+    "item_id": "dn_004",
+    "name": "Sweet Sensation (Meat Pie + Drink)",
+    "category": "dining",
+    "price_naira": 1500,
+    "rating": 4.5,
+    "location": "Nigeria",
+    "tags": [
+      "snack",
+      "bakery",
+      "budget"
+    ],
+    "description": "Nigerian meat pie classic.",
+    "review_count": 4100,
+    "cross_domain_tags": [
+      "snack",
+      "budget",
+      "commute"
+    ]
+  },
+  {
+    "item_id": "dn_005",
+    "name": "Eko Hotel Sunday Buffet",
+    "category": "dining",
+    "price_naira": 35000,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "luxury",
+      "buffet",
+      "family"
+    ],
+    "description": "Massive spread, live music, Lagos high society.",
+    "review_count": 450,
+    "cross_domain_tags": [
+      "luxury",
+      "family",
+      "status"
+    ]
+  },
+  {
+    "item_id": "dn_006",
+    "name": "RSVP Lagos (Steak Night)",
+    "category": "dining",
+    "price_naira": 65000,
+    "rating": 4.9,
+    "location": "Lagos",
+    "tags": [
+      "fine-dining",
+      "couples",
+      "exclusive"
+    ],
+    "description": "Best steak in Lagos, romantic setting.",
+    "review_count": 320,
+    "cross_domain_tags": [
+      "romance",
+      "luxury",
+      "status"
+    ]
+  },
+  {
+    "item_id": "dn_007",
+    "name": "Cactus (Oceanview Brunch)",
+    "category": "dining",
+    "price_naira": 18000,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "brunch",
+      "instagrammable",
+      "family"
+    ],
+    "description": "View of lagoon, good for dates.",
+    "review_count": 780,
+    "cross_domain_tags": [
+      "social",
+      "romance",
+      "instagram"
+    ]
+  },
+  {
+    "item_id": "dn_008",
+    "name": "Native Restaurant (Okro Soup)",
+    "category": "dining",
+    "price_naira": 12000,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "traditional",
+      "fine-dining",
+      "culture"
+    ],
+    "description": "Elevated Nigerian cuisine, very classy.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "culture",
+      "luxury",
+      "dining"
+    ]
+  },
+  {
+    "item_id": "dn_009",
+    "name": "Bungalow Restaurant (Sushi)",
+    "category": "dining",
+    "price_naira": 25000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "japanese",
+      "fusion",
+      "trendy"
+    ],
+    "description": "Lagos elite favorite, good for dates.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "social",
+      "trendy",
+      "status"
+    ]
+  },
+  {
+    "item_id": "dn_010",
+    "name": "Nkoyo (Calabar Cuisine)",
+    "category": "dining",
+    "price_naira": 10000,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "calabar",
+      "traditional",
+      "soup"
+    ],
+    "description": "Edikang Ikong and Afang experts.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "culture",
+      "soup",
+      "dining"
+    ]
+  },
+  {
+    "item_id": "dn_011",
+    "name": "Yellow Chilli (Ofada Rice)",
+    "category": "dining",
+    "price_naira": 8500,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "local",
+      "premium",
+      "lunch"
+    ],
+    "description": "Tunde Wey's place. Very authentic.",
+    "review_count": 430,
+    "cross_domain_tags": [
+      "culture",
+      "dining",
+      "status"
+    ]
+  },
+  {
+    "item_id": "dn_012",
+    "name": "Shawarma (Al-Safa, Abuja)",
+    "category": "dining",
+    "price_naira": 2500,
+    "rating": 4.6,
+    "location": "Abuja",
+    "tags": [
+      "street-food",
+      "fast-food",
+      "dinner"
+    ],
+    "description": "Best shawarma in Wuse 2.",
+    "review_count": 1500,
+    "cross_domain_tags": [
+      "fast-food",
+      "dinner",
+      "trendy"
+    ]
+  },
+  {
+    "item_id": "dn_013",
+    "name": "Chicken Republic (Jollof Rice)",
+    "category": "dining",
+    "price_naira": 2800,
+    "rating": 4.3,
+    "location": "Nigeria",
+    "tags": [
+      "fast-food",
+      "chain",
+      "lunch"
+    ],
+    "description": "School children and worker classic.",
+    "review_count": 3100,
+    "cross_domain_tags": [
+      "fast-food",
+      "budget",
+      "work"
+    ]
+  },
+  {
+    "item_id": "dn_014",
+    "name": "Domino's Pizza (Lagos)",
+    "category": "dining",
+    "price_naira": 12000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "pizza",
+      "fast-food",
+      "family"
+    ],
+    "description": "Birthday party favorite.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "family",
+      "party",
+      "fast-food"
+    ]
+  },
+  {
+    "item_id": "dn_015",
+    "name": "Ocean Basket (PH)",
+    "category": "dining",
+    "price_naira": 22000,
+    "rating": 4.6,
+    "location": "Port Harcourt",
+    "tags": [
+      "seafood",
+      "family",
+      "dinner"
+    ],
+    "description": "Oil workers' seafood spot.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "seafood",
+      "dining",
+      "work"
+    ]
+  },
+  {
+    "item_id": "dn_016",
+    "name": "Soju (Korean BBQ)",
+    "category": "dining",
+    "price_naira": 30000,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "korean",
+      "exotic",
+      "trendy"
+    ],
+    "description": "K-pop fans and young elites.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "trendy",
+      "social",
+      "instagram"
+    ]
+  },
+  {
+    "item_id": "dn_017",
+    "name": "Bukka (Iyan + Egusi)",
+    "category": "dining",
+    "price_naira": 2000,
+    "rating": 4.5,
+    "location": "Ibadan",
+    "tags": [
+      "local",
+      "budget",
+      "swallow"
+    ],
+    "description": "Roadside but very tasty.",
+    "review_count": 1800,
+    "cross_domain_tags": [
+      "budget",
+      "local",
+      "lunch"
+    ]
+  },
+  {
+    "item_id": "dn_018",
+    "name": "Jevinik (Pounded Yam + Ogbono)",
+    "category": "dining",
+    "price_naira": 3500,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "local",
+      "portion",
+      "lunch"
+    ],
+    "description": "Very large portions, value for money.",
+    "review_count": 1450,
+    "cross_domain_tags": [
+      "budget",
+      "lunch",
+      "value"
+    ]
+  },
+  {
+    "item_id": "dn_019",
+    "name": "Cafe One (Abuja Brunch)",
+    "category": "dining",
+    "price_naira": 15000,
+    "rating": 4.5,
+    "location": "Abuja",
+    "tags": [
+      "brunch",
+      "expat",
+      "coffee"
+    ],
+    "description": "Expat and diplomat favorite.",
+    "review_count": 410,
+    "cross_domain_tags": [
+      "coffee",
+      "work",
+      "status"
+    ]
+  },
+  {
+    "item_id": "dn_020",
+    "name": "Terra Kulture (Yam + Egg Sauce)",
+    "category": "dining",
+    "price_naira": 8000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "brunch",
+      "artsy",
+      "traditional"
+    ],
+    "description": "After-art gallery lunch.",
+    "review_count": 530,
+    "cross_domain_tags": [
+      "arts",
+      "culture",
+      "brunch"
+    ]
+  },
+  {
+    "item_id": "wl_001",
+    "name": "Dudu Osun (Original)",
+    "category": "wellness",
+    "price_naira": 500,
+    "rating": 4.7,
+    "location": "Nigeria",
+    "tags": [
+      "skincare",
+      "traditional",
+      "cheap"
+    ],
+    "description": "Black soap, clear pimples, removes makeup.",
+    "review_count": 8900,
+    "cross_domain_tags": [
+      "beauty",
+      "traditional",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "wl_002",
+    "name": "Organic Shea Butter (1kg)",
+    "category": "wellness",
+    "price_naira": 4000,
+    "rating": 4.8,
+    "location": "Kaduna",
+    "tags": [
+      "skincare",
+      "natural",
+      "body"
+    ],
+    "description": "Unrefined, great for stretch marks.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "beauty",
+      "natural",
+      "pregnancy"
+    ]
+  },
+  {
+    "item_id": "wl_003",
+    "name": "Zaron Lipstick (Red)",
+    "category": "wellness",
+    "price_naira": 7500,
+    "rating": 4.5,
+    "location": "Nigeria",
+    "tags": [
+      "makeup",
+      "local",
+      "beauty"
+    ],
+    "description": "Made in Nigeria, long lasting.",
+    "review_count": 1450,
+    "cross_domain_tags": [
+      "beauty",
+      "local-brand",
+      "fashion"
+    ]
+  },
+  {
+    "item_id": "wl_004",
+    "name": "Gym Membership (Fitness Central)",
+    "category": "wellness",
+    "price_naira": 55000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "gym",
+      "fitness",
+      "trendy"
+    ],
+    "description": "Influencer gym, Lekki branch.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "fitness",
+      "social",
+      "status"
+    ]
+  },
+  {
+    "item_id": "wl_005",
+    "name": "Yoga Class (1 Month)",
+    "category": "wellness",
+    "price_naira": 30000,
+    "rating": 4.5,
+    "location": "Abuja",
+    "tags": [
+      "yoga",
+      "peace",
+      "stress"
+    ],
+    "description": "Traffic stress relief class.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "peace",
+      "health",
+      "work"
+    ]
+  },
+  {
+    "item_id": "wl_006",
+    "name": "Hausa Traditional Massage",
+    "category": "wellness",
+    "price_naira": 10000,
+    "rating": 4.7,
+    "location": "Kano",
+    "tags": [
+      "massage",
+      "traditional",
+      "full-body"
+    ],
+    "description": "Northern deep tissue massage.",
+    "review_count": 280,
+    "cross_domain_tags": [
+      "wellness",
+      "culture",
+      "relax"
+    ]
+  },
+  {
+    "item_id": "wl_007",
+    "name": "Moringa Powder (500g)",
+    "category": "wellness",
+    "price_naira": 8000,
+    "rating": 4.6,
+    "location": "Nigeria",
+    "tags": [
+      "supplement",
+      "natural",
+      "energy"
+    ],
+    "description": "Organic, boosts immunity.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "health",
+      "natural",
+      "energy"
+    ]
+  },
+  {
+    "item_id": "wl_008",
+    "name": "Hair Growth Oil (Chebe + Karkar)",
+    "category": "wellness",
+    "price_naira": 12000,
+    "rating": 4.8,
+    "location": "Maiduguri",
+    "tags": [
+      "hair-care",
+      "natural",
+      "growth"
+    ],
+    "description": "Northern hair growth secret.",
+    "review_count": 670,
+    "cross_domain_tags": [
+      "beauty",
+      "natural",
+      "hair"
+    ]
+  },
+  {
+    "item_id": "wl_009",
+    "name": "Nivea Men (Set)",
+    "category": "wellness",
+    "price_naira": 12000,
+    "rating": 4.4,
+    "location": "Nigeria",
+    "tags": [
+      "men",
+      "grooming",
+      "skincare"
+    ],
+    "description": "Face wash, lotion, deodorant.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "men",
+      "grooming",
+      "status"
+    ]
+  },
+  {
+    "item_id": "wl_010",
+    "name": "Spa Day (Transcorp Hilton)",
+    "category": "wellness",
+    "price_naira": 85000,
+    "rating": 4.9,
+    "location": "Abuja",
+    "tags": [
+      "spa",
+      "luxury",
+      "massage"
+    ],
+    "description": "Presidential suite treatment.",
+    "review_count": 150,
+    "cross_domain_tags": [
+      "luxury",
+      "status",
+      "relax"
+    ]
+  },
+  {
+    "item_id": "wl_011",
+    "name": "Neem Oil (Pure)",
+    "category": "wellness",
+    "price_naira": 6000,
+    "rating": 4.7,
+    "location": "Nigeria",
+    "tags": [
+      "skincare",
+      "acne",
+      "natural"
+    ],
+    "description": "Strong smell but works for acne.",
+    "review_count": 780,
+    "cross_domain_tags": [
+      "beauty",
+      "natural",
+      "acne"
+    ]
+  },
+  {
+    "item_id": "wl_012",
+    "name": "Coconut Oil (Virgin)",
+    "category": "wellness",
+    "price_naira": 4000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "hair",
+      "skin",
+      "natural"
+    ],
+    "description": "Cold-pressed, edible grade.",
+    "review_count": 1450,
+    "cross_domain_tags": [
+      "beauty",
+      "natural",
+      "cooking"
+    ]
+  },
+  {
+    "item_id": "wl_013",
+    "name": "Black Seed Oil (Kano)",
+    "category": "wellness",
+    "price_naira": 10000,
+    "rating": 4.8,
+    "location": "Kano",
+    "tags": [
+      "supplement",
+      "islamic-medicine",
+      "natural"
+    ],
+    "description": "Prophetic medicine, high quality.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "religion",
+      "health",
+      "natural"
+    ]
+  },
+  {
+    "item_id": "wl_014",
+    "name": "Detox Tea (Zobo + Ginger)",
+    "category": "wellness",
+    "price_naira": 3000,
+    "rating": 4.5,
+    "location": "Nigeria",
+    "tags": [
+      "drink",
+      "detox",
+      "local"
+    ],
+    "description": "Packaged zobo tea bags.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "health",
+      "local",
+      "drink"
+    ]
+  },
+  {
+    "item_id": "wl_015",
+    "name": "Foot Reflexology (VGC)",
+    "category": "wellness",
+    "price_naira": 15000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "foot-massage",
+      "relax",
+      "luxury"
+    ],
+    "description": "For Lagos drivers and bankers.",
+    "review_count": 280,
+    "cross_domain_tags": [
+      "work",
+      "relax",
+      "luxury"
+    ]
+  },
+  {
+    "item_id": "wl_016",
+    "name": "Henna Tattoo (Traditional)",
+    "category": "wellness",
+    "price_naira": 5000,
+    "rating": 4.7,
+    "location": "Kano",
+    "tags": [
+      "beauty",
+      "temporary",
+      "northern"
+    ],
+    "description": "Wedding henna design.",
+    "review_count": 1100,
+    "cross_domain_tags": [
+      "wedding",
+      "beauty",
+      "culture"
+    ]
+  },
+  {
+    "item_id": "wl_017",
+    "name": "Meditation Retreat (1 day)",
+    "category": "wellness",
+    "price_naira": 25000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "meditation",
+      "stress",
+      "spiritual"
+    ],
+    "description": "Lekki silent retreat.",
+    "review_count": 120,
+    "cross_domain_tags": [
+      "peace",
+      "spiritual",
+      "wellness"
+    ]
+  },
+  {
+    "item_id": "wl_018",
+    "name": "Pregnancy Massage",
+    "category": "wellness",
+    "price_naira": 20000,
+    "rating": 4.9,
+    "location": "Abuja",
+    "tags": [
+      "pregnancy",
+      "massage",
+      "female"
+    ],
+    "description": "Certified prenatal therapist.",
+    "review_count": 190,
+    "cross_domain_tags": [
+      "pregnancy",
+      "female",
+      "health"
+    ]
+  },
+  {
+    "item_id": "ce_001",
+    "name": "Lagos Carnival (Island)",
+    "category": "community_events",
+    "price_naira": 5000,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "carnival",
+      "free",
+      "culture"
+    ],
+    "description": "Street parade, costumes, music.",
+    "review_count": 3100,
+    "cross_domain_tags": [
+      "culture",
+      "free",
+      "social"
+    ]
+  },
+  {
+    "item_id": "ce_002",
+    "name": "Calabar Carnival (VIP)",
+    "category": "community_events",
+    "price_naira": 50000,
+    "rating": 4.9,
+    "location": "Calabar",
+    "tags": [
+      "carnival",
+      "big-event",
+      "travel"
+    ],
+    "description": "Africa's biggest street party.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "travel",
+      "festival",
+      "status"
+    ]
+  },
+  {
+    "item_id": "ce_003",
+    "name": "Gidi Fest (General)",
+    "category": "community_events",
+    "price_naira": 25000,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "music",
+      "festival",
+      "beach"
+    ],
+    "description": "Afrobeats, beach, large crowd.",
+    "review_count": 1450,
+    "cross_domain_tags": [
+      "music",
+      "social",
+      "party"
+    ]
+  },
+  {
+    "item_id": "ce_004",
+    "name": "Flytime Fest (Burna Boy)",
+    "category": "community_events",
+    "price_naira": 75000,
+    "rating": 4.9,
+    "location": "Lagos",
+    "tags": [
+      "concert",
+      "VIP",
+      "luxury"
+    ],
+    "description": "Detty December special.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "music",
+      "luxury",
+      "december"
+    ]
+  },
+  {
+    "item_id": "ce_005",
+    "name": "Art X Lagos (Early Bird)",
+    "category": "community_events",
+    "price_naira": 3000,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "art",
+      "culture",
+      "networking"
+    ],
+    "description": "West African art fair.",
+    "review_count": 670,
+    "cross_domain_tags": [
+      "arts",
+      "status",
+      "culture"
+    ]
+  },
+  {
+    "item_id": "ce_006",
+    "name": "Lagos Food Festival",
+    "category": "community_events",
+    "price_naira": 10000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "food",
+      "family",
+      "weekend"
+    ],
+    "description": "Sample many restaurants.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "dining",
+      "social",
+      "family"
+    ]
+  },
+  {
+    "item_id": "ce_007",
+    "name": "Abuja International Trade Fair",
+    "category": "community_events",
+    "price_naira": 1500,
+    "rating": 4.4,
+    "location": "Abuja",
+    "tags": [
+      "trade",
+      "business",
+      "shopping"
+    ],
+    "description": "Buy goods cheaper than market.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "business",
+      "shopping",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "ce_008",
+    "name": "Eyo Festival (Lagos Island)",
+    "category": "community_events",
+    "price_naira": 0,
+    "rating": 4.9,
+    "location": "Lagos",
+    "tags": [
+      "cultural",
+      "traditional",
+      "free"
+    ],
+    "description": "White masquerades, king's ceremony.",
+    "review_count": 2800,
+    "cross_domain_tags": [
+      "culture",
+      "tradition",
+      "free"
+    ]
+  },
+  {
+    "item_id": "ce_009",
+    "name": "Durbar Festival (Kano)",
+    "category": "community_events",
+    "price_naira": 2000,
+    "rating": 4.9,
+    "location": "Kano",
+    "tags": [
+      "northern",
+      "horses",
+      "sallah"
+    ],
+    "description": "Horse parade, emir's palace.",
+    "review_count": 1450,
+    "cross_domain_tags": [
+      "culture",
+      "northern",
+      "sallah"
+    ]
+  },
+  {
+    "item_id": "ce_010",
+    "name": "Techpoint Summit",
+    "category": "community_events",
+    "price_naira": 15000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "tech",
+      "networking",
+      "business"
+    ],
+    "description": "Startup founders gathering.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "tech",
+      "business",
+      "networking"
+    ]
+  },
+  {
+    "item_id": "ce_011",
+    "name": "Argungu Fishing Festival",
+    "category": "community_events",
+    "price_naira": 0,
+    "rating": 4.8,
+    "location": "Kebbi",
+    "tags": [
+      "fishing",
+      "traditional",
+      "free"
+    ],
+    "description": "Men fishing with bare hands.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "culture",
+      "travel",
+      "traditional"
+    ]
+  },
+  {
+    "item_id": "ce_012",
+    "name": "Ojude Oba (Ijebu Ode)",
+    "category": "community_events",
+    "price_naira": 0,
+    "rating": 4.9,
+    "location": "Ijebu Ode",
+    "tags": [
+      "culture",
+      "family",
+      "free"
+    ],
+    "description": "Age groups visit the king.",
+    "review_count": 1200,
+    "cross_domain_tags": [
+      "culture",
+      "traditional",
+      "free"
+    ]
+  },
+  {
+    "item_id": "ce_013",
+    "name": "ASO Rock Half Marathon",
+    "category": "community_events",
+    "price_naira": 10000,
+    "rating": 4.5,
+    "location": "Abuja",
+    "tags": [
+      "fitness",
+      "sports",
+      "morning"
+    ],
+    "description": "Run for charity.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "fitness",
+      "health",
+      "sports"
+    ]
+  },
+  {
+    "item_id": "ce_014",
+    "name": "Lagos Wedding Expo",
+    "category": "community_events",
+    "price_naira": 5000,
+    "rating": 4.4,
+    "location": "Lagos",
+    "tags": [
+      "wedding",
+      "planning",
+      "expo"
+    ],
+    "description": "Meet vendors, get discounts.",
+    "review_count": 780,
+    "cross_domain_tags": [
+      "wedding",
+      "business",
+      "events"
+    ]
+  },
+  {
+    "item_id": "ce_015",
+    "name": "Nigerian Idol Live Show",
+    "category": "community_events",
+    "price_naira": 10000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "music",
+      "tv-show",
+      "entertainment"
+    ],
+    "description": "Watch voting in person.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "music",
+      "entertainment",
+      "social"
+    ]
+  },
+  {
+    "item_id": "tr_001",
+    "name": "Danfo Trip (Lagos Mainland)",
+    "category": "transportation",
+    "price_naira": 500,
+    "rating": 3.5,
+    "location": "Lagos",
+    "tags": [
+      "commute",
+      "budget",
+      "chaos"
+    ],
+    "description": "Mushin to Oshodi. No A/C, loud music.",
+    "review_count": 4500,
+    "cross_domain_tags": [
+      "commute",
+      "budget",
+      "work"
+    ]
+  },
+  {
+    "item_id": "tr_002",
+    "name": "BRT Bus (Mile 2 to CMS)",
+    "category": "transportation",
+    "price_naira": 1000,
+    "rating": 4.0,
+    "location": "Lagos",
+    "tags": [
+      "bus",
+      "work",
+      "a/c"
+    ],
+    "description": "Air conditioned, dedicated lane.",
+    "review_count": 3400,
+    "cross_domain_tags": [
+      "commute",
+      "work",
+      "a/c"
+    ]
+  },
+  {
+    "item_id": "tr_003",
+    "name": "Lagos Uber (VI to Airport)",
+    "category": "transportation",
+    "price_naira": 12000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "taxi",
+      "airport",
+      "comfort"
+    ],
+    "description": "Clean car, AC, no stress.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "travel",
+      "luxury",
+      "work"
+    ]
+  },
+  {
+    "item_id": "tr_004",
+    "name": "Okada (Short Distance)",
+    "category": "transportation",
+    "price_naira": 300,
+    "rating": 3.0,
+    "location": "Lagos",
+    "tags": [
+      "bike",
+      "fast",
+      "dangerous"
+    ],
+    "description": "Traffic bypass but risky.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "commute",
+      "fast",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "tr_005",
+    "name": "Keke NAPEP (Marwa)",
+    "category": "transportation",
+    "price_naira": 400,
+    "rating": 3.8,
+    "location": "Lagos",
+    "tags": [
+      "tricycle",
+      "budget",
+      "short"
+    ],
+    "description": "Carries 3 passengers, ok for short trips.",
+    "review_count": 1800,
+    "cross_domain_tags": [
+      "commute",
+      "budget",
+      "short"
+    ]
+  },
+  {
+    "item_id": "tr_006",
+    "name": "Abuja Taxi (Airport to Wuse)",
+    "category": "transportation",
+    "price_naira": 5000,
+    "rating": 4.2,
+    "location": "Abuja",
+    "tags": [
+      "taxi",
+      "airport",
+      "fixed-price"
+    ],
+    "description": "Official airport taxi.",
+    "review_count": 670,
+    "cross_domain_tags": [
+      "travel",
+      "work",
+      "status"
+    ]
+  },
+  {
+    "item_id": "tr_007",
+    "name": "Train (Abuja to Kaduna)",
+    "category": "transportation",
+    "price_naira": 3000,
+    "rating": 4.5,
+    "location": "Abuja",
+    "tags": [
+      "train",
+      "travel",
+      "safe"
+    ],
+    "description": "Air conditioned, safer than road.",
+    "review_count": 1200,
+    "cross_domain_tags": [
+      "travel",
+      "safe",
+      "work"
+    ]
+  },
+  {
+    "item_id": "tr_008",
+    "name": "Lagos Ferry (CMS to VI)",
+    "category": "transportation",
+    "price_naira": 1500,
+    "rating": 4.3,
+    "location": "Lagos",
+    "tags": [
+      "water",
+      "scenic",
+      "no-traffic"
+    ],
+    "description": "Avoids bridge traffic, scenic view.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "commute",
+      "scenic",
+      "luxury"
+    ]
+  },
+  {
+    "item_id": "tr_009",
+    "name": "Bolt (Economy) Lekki to VI",
+    "category": "transportation",
+    "price_naira": 3500,
+    "rating": 4.4,
+    "location": "Lagos",
+    "tags": [
+      "ride-hailing",
+      "commute",
+      "comfort"
+    ],
+    "description": "Better than Uber on weekends.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "commute",
+      "work",
+      "social"
+    ]
+  },
+  {
+    "item_id": "tr_010",
+    "name": "Sienna Bus (Lagos to Ibadan)",
+    "category": "transportation",
+    "price_naira": 5000,
+    "rating": 4.0,
+    "location": "Lagos",
+    "tags": [
+      "interstate",
+      "shared",
+      "budget"
+    ],
+    "description": "6 passengers, leaves when full.",
+    "review_count": 1450,
+    "cross_domain_tags": [
+      "travel",
+      "budget",
+      "interstate"
+    ]
+  },
+  {
+    "item_id": "re_001",
+    "name": "Self-contained (Oshodi)",
+    "category": "real_estate",
+    "price_naira": 450000,
+    "rating": 3.5,
+    "location": "Lagos",
+    "tags": [
+      "rent",
+      "budget",
+      "single"
+    ],
+    "description": "Yearly rent. One room, private toilet.",
+    "review_count": 780,
+    "cross_domain_tags": [
+      "rent",
+      "budget",
+      "single"
+    ]
+  },
+  {
+    "item_id": "re_002",
+    "name": "2-bedroom Flat (Ikeja)",
+    "category": "real_estate",
+    "price_naira": 1800000,
+    "rating": 4.0,
+    "location": "Lagos",
+    "tags": [
+      "rent",
+      "family",
+      "mid-range"
+    ],
+    "description": "Yearly rent, convenience, water included.",
+    "review_count": 450,
+    "cross_domain_tags": [
+      "family",
+      "rent",
+      "work"
+    ]
+  },
+  {
+    "item_id": "re_003",
+    "name": "Mini Flat (Lekki Phase 1)",
+    "category": "real_estate",
+    "price_naira": 2500000,
+    "rating": 4.2,
+    "location": "Lagos",
+    "tags": [
+      "rent",
+      "luxury",
+      "single"
+    ],
+    "description": "One bed, posh estate.",
+    "review_count": 210,
+    "cross_domain_tags": [
+      "luxury",
+      "status",
+      "rent"
+    ]
+  },
+  {
+    "item_id": "re_004",
+    "name": "3-bedroom Duplex (Abuja)",
+    "category": "real_estate",
+    "price_naira": 8000000,
+    "rating": 4.7,
+    "location": "Abuja",
+    "tags": [
+      "rent",
+      "luxury",
+      "family"
+    ],
+    "description": "Diplomat area, security.",
+    "review_count": 98,
+    "cross_domain_tags": [
+      "luxury",
+      "family",
+      "status"
+    ]
+  },
+  {
+    "item_id": "re_005",
+    "name": "Paying Guest (Single Room)",
+    "category": "real_estate",
+    "price_naira": 50000,
+    "rating": 3.8,
+    "location": "Lagos",
+    "tags": [
+      "monthly",
+      "student",
+      "budget"
+    ],
+    "description": "Monthly payment, shared facilities.",
+    "review_count": 1200,
+    "cross_domain_tags": [
+      "student",
+      "budget",
+      "monthly"
+    ]
+  },
+  {
+    "item_id": "re_006",
+    "name": "Shop Rental (Alaba Market)",
+    "category": "real_estate",
+    "price_naira": 1200000,
+    "rating": 4.0,
+    "location": "Lagos",
+    "tags": [
+      "business",
+      "shop",
+      "market"
+    ],
+    "description": "Yearly rent, high foot traffic.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "business",
+      "market",
+      "work"
+    ]
+  },
+  {
+    "item_id": "re_007",
+    "name": "Land (Epe 500sqm)",
+    "category": "real_estate",
+    "price_naira": 4500000,
+    "rating": 4.3,
+    "location": "Lagos",
+    "tags": [
+      "land",
+      "investment",
+      "buy"
+    ],
+    "description": "Dry land, documents ready.",
+    "review_count": 150,
+    "cross_domain_tags": [
+      "investment",
+      "land",
+      "future"
+    ]
+  },
+  {
+    "item_id": "re_008",
+    "name": "Shortlet (2-night VI)",
+    "category": "real_estate",
+    "price_naira": 150000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "shortlet",
+      "vacation",
+      "luxury"
+    ],
+    "description": "2 nights, fully furnished.",
+    "review_count": 280,
+    "cross_domain_tags": [
+      "travel",
+      "luxury",
+      "shortlet"
+    ]
+  },
+  {
+    "item_id": "re_009",
+    "name": "Hostel Bedspace (UNILAG)",
+    "category": "real_estate",
+    "price_naira": 45000,
+    "rating": 3.5,
+    "location": "Lagos",
+    "tags": [
+      "student",
+      "campus",
+      "session"
+    ],
+    "description": "Per session, 4 per room.",
+    "review_count": 1800,
+    "cross_domain_tags": [
+      "student",
+      "campus",
+      "budget"
+    ]
+  },
+  {
+    "item_id": "re_010",
+    "name": "Office Space (Ikeja 50sqm)",
+    "category": "real_estate",
+    "price_naira": 1500000,
+    "rating": 4.1,
+    "location": "Lagos",
+    "tags": [
+      "office",
+      "business",
+      "work"
+    ],
+    "description": "Yearly rent, includes security.",
+    "review_count": 190,
+    "cross_domain_tags": [
+      "business",
+      "work",
+      "office"
+    ]
+  },
+  {
+    "item_id": "ed_001",
+    "name": "WAEC Registration (1 sitting)",
+    "category": "education",
+    "price_naira": 27000,
+    "rating": 4.0,
+    "location": "Nigeria",
+    "tags": [
+      "exam",
+      "secondary",
+      "govt"
+    ],
+    "description": "Includes practicals.",
+    "review_count": 5600,
+    "cross_domain_tags": [
+      "education",
+      "exam",
+      "youth"
+    ]
+  },
+  {
+    "item_id": "ed_002",
+    "name": "JAMB Registration + Mock",
+    "category": "education",
+    "price_naira": 7500,
+    "rating": 4.2,
+    "location": "Nigeria",
+    "tags": [
+      "university",
+      "exam",
+      "cbt"
+    ],
+    "description": "UTME registration.",
+    "review_count": 8900,
+    "cross_domain_tags": [
+      "education",
+      "university",
+      "exam"
+    ]
+  },
+  {
+    "item_id": "ed_003",
+    "name": "Post-UTME (UNILAG)",
+    "category": "education",
+    "price_naira": 5000,
+    "rating": 4.1,
+    "location": "Lagos",
+    "tags": [
+      "university",
+      "screening",
+      "cbt"
+    ],
+    "description": "Pay online before date.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "university",
+      "education",
+      "exam"
+    ]
+  },
+  {
+    "item_id": "ed_004",
+    "name": "Driving School (Full Package)",
+    "category": "education",
+    "price_naira": 45000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "skill",
+      "driving",
+      "license"
+    ],
+    "description": "Theory + practical + license.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "skill",
+      "work",
+      "transport"
+    ]
+  },
+  {
+    "item_id": "ed_005",
+    "name": "Catering Training (3 Months)",
+    "category": "education",
+    "price_naira": 80000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "skill",
+      "food",
+      "business"
+    ],
+    "description": "Learn small chops and cake.",
+    "review_count": 450,
+    "cross_domain_tags": [
+      "skill",
+      "business",
+      "food"
+    ]
+  },
+  {
+    "item_id": "ed_006",
+    "name": "YABA Tech HND Form",
+    "category": "education",
+    "price_naira": 15000,
+    "rating": 4.3,
+    "location": "Lagos",
+    "tags": [
+      "polytechnic",
+      "higher-ed",
+      "form"
+    ],
+    "description": "Online application fee.",
+    "review_count": 780,
+    "cross_domain_tags": [
+      "education",
+      "polytechnic",
+      "work"
+    ]
+  },
+  {
+    "item_id": "ed_007",
+    "name": "Part-time Degree (UNILAG)",
+    "category": "education",
+    "price_naira": 150000,
+    "rating": 4.4,
+    "location": "Lagos",
+    "tags": [
+      "part-time",
+      "degree",
+      "working"
+    ],
+    "description": "Per semester, weekends.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "work",
+      "education",
+      "degree"
+    ]
+  },
+  {
+    "item_id": "ed_008",
+    "name": "IELTS Registration (British Council)",
+    "category": "education",
+    "price_naira": 120000,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "exam",
+      "abroad",
+      "english"
+    ],
+    "description": "For study abroad.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "travel",
+      "education",
+      "exam"
+    ]
+  },
+  {
+    "item_id": "ed_009",
+    "name": "Computer Literacy (2 weeks)",
+    "category": "education",
+    "price_naira": 15000,
+    "rating": 4.3,
+    "location": "Lagos",
+    "tags": [
+      "skill",
+      "computer",
+      "basic"
+    ],
+    "description": "Microsoft Word, Excel.",
+    "review_count": 1200,
+    "cross_domain_tags": [
+      "skill",
+      "work",
+      "student"
+    ]
+  },
+  {
+    "item_id": "ed_010",
+    "name": "Yoga Teacher Training",
+    "category": "education",
+    "price_naira": 200000,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "certification",
+      "wellness",
+      "full-time"
+    ],
+    "description": "200-hour certification.",
+    "review_count": 120,
+    "cross_domain_tags": [
+      "wellness",
+      "work",
+      "certification"
+    ]
+  },
+  {
+    "item_id": "rl_001",
+    "name": "Sunday Tithe (Covenant Church)",
+    "category": "religion",
+    "price_naira": 10000,
+    "rating": 4.5,
+    "location": "Lagos",
+    "tags": [
+      "tithe",
+      "offering",
+      "church"
+    ],
+    "description": "10% of monthly income.",
+    "review_count": 3400,
+    "cross_domain_tags": [
+      "religion",
+      "church",
+      "giving"
+    ]
+  },
+  {
+    "item_id": "rl_002",
+    "name": "Ramadan Sallah Ram (Large)",
+    "category": "religion",
+    "price_naira": 350000,
+    "rating": 4.8,
+    "location": "Kano",
+    "tags": [
+      "sallah",
+      "slaughter",
+      "family"
+    ],
+    "description": "Full ram for sharing.",
+    "review_count": 890,
+    "cross_domain_tags": [
+      "religion",
+      "festival",
+      "family"
+    ]
+  },
+  {
+    "item_id": "rl_003",
+    "name": "Anointing Oil (RCCG)",
+    "category": "religion",
+    "price_naira": 1000,
+    "rating": 4.7,
+    "location": "Nigeria",
+    "tags": [
+      "spiritual",
+      "blessing",
+      "church"
+    ],
+    "description": "Daddy G.O. brand.",
+    "review_count": 8900,
+    "cross_domain_tags": [
+      "religion",
+      "spiritual",
+      "blessing"
+    ]
+  },
+  {
+    "item_id": "rl_004",
+    "name": "Prophetic Prayer Conference",
+    "category": "religion",
+    "price_naira": 5000,
+    "rating": 4.6,
+    "location": "Lagos",
+    "tags": [
+      "conference",
+      "prayer",
+      "crusade"
+    ],
+    "description": "3 days, overnight service.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "religion",
+      "prayer",
+      "event"
+    ]
+  },
+  {
+    "item_id": "rl_005",
+    "name": "Church Wedding (Small)",
+    "category": "religion",
+    "price_naira": 100000,
+    "rating": 4.4,
+    "location": "Lagos",
+    "tags": [
+      "wedding",
+      "church",
+      "ceremony"
+    ],
+    "description": "Venue + pastor fee.",
+    "review_count": 560,
+    "cross_domain_tags": [
+      "wedding",
+      "religion",
+      "family"
+    ]
+  },
+  {
+    "item_id": "rl_006",
+    "name": "Zakat (Annual Alms)",
+    "category": "religion",
+    "price_naira": 50000,
+    "rating": 4.9,
+    "location": "Nigeria",
+    "tags": [
+      "islam",
+      "zakat",
+      "charity"
+    ],
+    "description": "2.5% of savings.",
+    "review_count": 1200,
+    "cross_domain_tags": [
+      "religion",
+      "charity",
+      "giving"
+    ]
+  },
+  {
+    "item_id": "rl_007",
+    "name": "Umrah Visa + Flight (Economy)",
+    "category": "religion",
+    "price_naira": 1200000,
+    "rating": 4.8,
+    "location": "Lagos",
+    "tags": [
+      "umrah",
+      "travel",
+      "islam"
+    ],
+    "description": "Lesser pilgrimage package.",
+    "review_count": 340,
+    "cross_domain_tags": [
+      "travel",
+      "religion",
+      "spiritual"
+    ]
+  },
+  {
+    "item_id": "rl_008",
+    "name": "Fasting & Prayer Guide (Book)",
+    "category": "religion",
+    "price_naira": 3000,
+    "rating": 4.5,
+    "location": "Nigeria",
+    "tags": [
+      "book",
+      "prayer",
+      "christian"
+    ],
+    "description": "21-day guide.",
+    "review_count": 1450,
+    "cross_domain_tags": [
+      "religion",
+      "book",
+      "spiritual"
+    ]
+  },
+  {
+    "item_id": "rl_009",
+    "name": "Child Dedication (Event)",
+    "category": "religion",
+    "price_naira": 25000,
+    "rating": 4.3,
+    "location": "Lagos",
+    "tags": [
+      "baby",
+      "church",
+      "ceremony"
+    ],
+    "description": "Includes cake and pictures.",
+    "review_count": 780,
+    "cross_domain_tags": [
+      "family",
+      "religion",
+      "baby"
+    ]
+  },
+  {
+    "item_id": "rl_010",
+    "name": "Gospel Music Concert (Eternal)",
+    "category": "religion",
+    "price_naira": 5000,
+    "rating": 4.7,
+    "location": "Lagos",
+    "tags": [
+      "music",
+      "worship",
+      "concert"
+    ],
+    "description": "Nigerian gospel artists.",
+    "review_count": 2100,
+    "cross_domain_tags": [
+      "music",
+      "religion",
+      "event"
+    ]
+  }
+]

@@ -8,3 +8,11 @@ loguru
 tenacity
 python-dotenv
 filelock 
+faiss-cpu
+sentence-transformers
+numpy
+pandas
+scikit-learn
+tqdm
+bert-score
+requests

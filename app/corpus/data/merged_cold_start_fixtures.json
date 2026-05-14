@@ -1,0 +1,5603 @@
+[
+  {
+    "fixture_id": "cs_t01",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_dayo",
+      "age_range": "25-34",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "cheap food",
+        "fast tech",
+        "bus park snacks"
+      ],
+      "budget_naira": 4000,
+      "occupation": "bus conductor",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "street_food",
+      "budget",
+      "value"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury",
+      "fine dining"
+    ],
+    "evaluation_notes": "Should recommend Ewa Agoyin, Aboki bread, or Gala with La Casera."
+  },
+  {
+    "fixture_id": "cs_t02",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_hauwa",
+      "age_range": "35-44",
+      "location": "Sokoto",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "traditional luxury",
+        "gold jewelry",
+        "fine fabrics"
+      ],
+      "budget_naira": 300000,
+      "occupation": "contractor",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "fashion",
+      "luxury",
+      "prestige"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food",
+      "cheap"
+    ],
+    "evaluation_notes": "Should recommend coral beads, handwoven Kente, or designer Agbada."
+  },
+  {
+    "fixture_id": "cs_t03",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_obi",
+      "age_range": "18-24",
+      "location": "Port Harcourt",
+      "archetype": "community",
+      "stated_preferences": [
+        "afrobeats",
+        "nightlife",
+        "gadgets"
+      ],
+      "budget_naira": 50000,
+      "occupation": "student",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "community_events",
+      "music",
+      "trending"
+    ],
+    "expected_recommendation_excludes": [
+      "traditional",
+      "boring"
+    ],
+    "evaluation_notes": "Should recommend Burna Boy Live, Flytime Fest, or Gidi Culture Fest."
+  },
+  {
+    "fixture_id": "cs_t04",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_amara",
+      "age_range": "25-34",
+      "location": "Abuja",
+      "archetype": "default",
+      "stated_preferences": [
+        "healthy meals",
+        "skincare",
+        "peaceful spots"
+      ],
+      "budget_naira": 20000,
+      "occupation": "nurse",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "wellness",
+      "dining",
+      "natural"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife",
+      "loud"
+    ],
+    "evaluation_notes": "Should recommend smoothie bowls at Craft & Tonic, or Jikoni organic Zobo."
+  },
+  {
+    "fixture_id": "cs_t05",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_emeka",
+      "age_range": "45-54",
+      "location": "Owerri",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "local soup",
+        "sturdy tech",
+        "traditional clothes"
+      ],
+      "budget_naira": 15000,
+      "occupation": "electrician",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "electronics",
+      "street_food",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury",
+      "international"
+    ],
+    "evaluation_notes": "Should recommend Isiewu, ofe nsala, or Zinox power bank."
+  },
+  {
+    "fixture_id": "cs_t06",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_funke",
+      "age_range": "25-34",
+      "location": "Ilorin",
+      "archetype": "community",
+      "stated_preferences": [
+        "trending movies",
+        "family gatherings",
+        "fashion accessories"
+      ],
+      "budget_naira": 10000,
+      "occupation": "seamstress",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "nollywood",
+      "fashion",
+      "family"
+    ],
+    "expected_recommendation_excludes": [
+      "high-tech",
+      "luxury dining"
+    ],
+    "evaluation_notes": "Should recommend 'Battle on Buka Street' or handmade Fila caps."
+  },
+  {
+    "fixture_id": "cs_t07",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_amaka_ng",
+      "age_range": "30-39",
+      "location": "Enugu",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "wine tasting",
+        "spa",
+        "luxury handbags"
+      ],
+      "budget_naira": 450000,
+      "occupation": "bank manager",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "premium",
+      "self_care"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food",
+      "budget"
+    ],
+    "evaluation_notes": "Recommend Nespresso machine, MK handbag, or Transcorp Spa voucher."
+  },
+  {
+    "fixture_id": "cs_t08",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_umar",
+      "age_range": "18-24",
+      "location": "Kano",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "football viewing",
+        "cheap data",
+        "tuwo shinkafa"
+      ],
+      "budget_naira": 2500,
+      "occupation": "apprentice mechanic",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "sports",
+      "budget",
+      "local_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury",
+      "international_dining"
+    ],
+    "evaluation_notes": "Recommend miyan kuka with tuwo, or 1GB MTN night plan."
+  },
+  {
+    "fixture_id": "cs_t09",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_ifeoluwa",
+      "age_range": "22-29",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "church events",
+        "gospel music",
+        "print on demand"
+      ],
+      "budget_naira": 35000,
+      "occupation": "fashion designer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "faith",
+      "fashion",
+      "community_events"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol",
+      "nightlife"
+    ],
+    "evaluation_notes": "Recommend Experience Lagos ticket or custom gospel merch."
+  },
+  {
+    "fixture_id": "cs_t10",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_bashir",
+      "age_range": "35-44",
+      "location": "Maiduguri",
+      "archetype": "default",
+      "stated_preferences": [
+        "solar panels",
+        "cold drinks",
+        "generator servicing"
+      ],
+      "budget_naira": 120000,
+      "occupation": "small shop owner",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "energy",
+      "electronics",
+      "utilities"
+    ],
+    "expected_recommendation_excludes": [
+      "fine_dining",
+      "luxury fashion"
+    ],
+    "evaluation_notes": "Recommend 200W solar kit, deep freezer, or Mikano generator service."
+  },
+  {
+    "fixture_id": "cs_t11",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_chidinma",
+      "age_range": "20-26",
+      "location": "Onitsha",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "cheapest rice",
+        "second-hand phones",
+        "Ankara bargains"
+      ],
+      "budget_naira": 7000,
+      "occupation": "market trader",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "value",
+      "second_hand"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury",
+      "new_tech"
+    ],
+    "evaluation_notes": "Recommend Mama Put jollof rice, or refurbished Tecno phone."
+  },
+  {
+    "fixture_id": "cs_t12",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_ekwueme",
+      "age_range": "50-60",
+      "location": "Awka",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "land investment",
+        "ukwu",
+        "native doctors"
+      ],
+      "budget_naira": 2000000,
+      "occupation": "real estate developer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "investment",
+      "premium",
+      "heritage"
+    ],
+    "expected_recommendation_excludes": [
+      "fast_food",
+      "youth_fashion"
+    ],
+    "evaluation_notes": "Recommend Lekki Phase 2 land tour or traditional Ozo title attire."
+  },
+  {
+    "fixture_id": "cs_t13",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_adanne",
+      "age_range": "18-22",
+      "location": "Calabar",
+      "archetype": "community",
+      "stated_preferences": [
+        "carnival",
+        "photography",
+        "small chops"
+      ],
+      "budget_naira": 15000,
+      "occupation": "undergraduate (UNICAL)",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "festival",
+      "food",
+      "social"
+    ],
+    "expected_recommendation_excludes": [
+      "corporate",
+      "boring"
+    ],
+    "evaluation_notes": "Recommend Calabar Carnival ticket, spring rolls, or Canon camera rental."
+  },
+  {
+    "fixture_id": "cs_t14",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_aliyu",
+      "age_range": "40-49",
+      "location": "Kaduna",
+      "archetype": "default",
+      "stated_preferences": [
+        "pharmacy",
+        "family health",
+        "halal food"
+      ],
+      "budget_naira": 45000,
+      "occupation": "civil servant",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "health",
+      "wellness",
+      "halal"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol",
+      "nightlife"
+    ],
+    "evaluation_notes": "Recommend HBP monitor, Malla health plan, or Kilishi gift pack."
+  },
+  {
+    "fixture_id": "cs_t15",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_bukunmi",
+      "age_range": "28-35",
+      "location": "Akure",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "farming tools",
+        "cassava processing",
+        "oyo",
+        "tractor hiring"
+      ],
+      "budget_naira": 250000,
+      "occupation": "farmer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "agriculture",
+      "equipment",
+      "utility"
+    ],
+    "expected_recommendation_excludes": [
+      "fashion",
+      "entertainment"
+    ],
+    "evaluation_notes": "Recommend cassava grater machine, knapsack sprayer, or Hellofood for farmers."
+  },
+  {
+    "fixture_id": "cs_t16",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_nyenka",
+      "age_range": "25-32",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "professional makeup",
+        "lash extensions",
+        "designer gele"
+      ],
+      "budget_naira": 80000,
+      "occupation": "oil & gas contractor",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "beauty",
+      "luxury",
+      "events"
+    ],
+    "expected_recommendation_excludes": [
+      "budget",
+      "street_food"
+    ],
+    "evaluation_notes": "Recommend Banke Meshida makeup session or hand-painted gele."
+  },
+  {
+    "fixture_id": "cs_t17",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_olisa",
+      "age_range": "19-23",
+      "location": "Nnewi",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "spare parts",
+        "cheapest fuel",
+        "motorcycle repairs"
+      ],
+      "budget_naira": 3000,
+      "occupation": "okada rider",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "budget",
+      "maintenance"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury",
+      "dining"
+    ],
+    "evaluation_notes": "Recommend engine oil, spark plugs, or Abacha with fish."
+  },
+  {
+    "fixture_id": "cs_t18",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_ramatu",
+      "age_range": "30-40",
+      "location": "Bauchi",
+      "archetype": "community",
+      "stated_preferences": [
+        "Quranic education",
+        "dates",
+        "family outings"
+      ],
+      "budget_naira": 25000,
+      "occupation": "teacher",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "faith",
+      "family",
+      "heritage"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol",
+      "nightlife"
+    ],
+    "evaluation_notes": "Recommend Madinah dates, Islamic books, or Yankari game reserve trip."
+  },
+  {
+    "fixture_id": "cs_t19",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_efe",
+      "age_range": "22-28",
+      "location": "Warri",
+      "archetype": "default",
+      "stated_preferences": [
+        "banga soup",
+        "street rap",
+        "barbing salon"
+      ],
+      "budget_naira": 12000,
+      "occupation": "barber",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "local_food",
+      "music",
+      "grooming"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury",
+      "corporate"
+    ],
+    "evaluation_notes": "Recommend star beer, fresh banga with starch, or clipper set."
+  },
+  {
+    "fixture_id": "cs_t20",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_maryam",
+      "age_range": "45-55",
+      "location": "Jos",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "real estate rentals",
+        "imported curtains",
+        "gardening"
+      ],
+      "budget_naira": 500000,
+      "occupation": "landlady",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "home",
+      "premium",
+      "investment"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food",
+      "youth_events"
+    ],
+    "evaluation_notes": "Recommend Turkish curtains, Laziseed flower kits, or property listing."
+  },
+  {
+    "fixture_id": "cs_t21",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_bus_21",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "cheap rice",
+        "gala",
+        "pure water"
+      ],
+      "budget_naira": 2000,
+      "occupation": "bus driver",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "street_food",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: bus driver in Lagos with ₦2000"
+  },
+  {
+    "fixture_id": "cs_t22",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_law_22",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "designer shoes",
+        "caviar",
+        "private club"
+      ],
+      "budget_naira": 600000,
+      "occupation": "lawyer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "prestige"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: lawyer in Abuja with ₦600000"
+  },
+  {
+    "fixture_id": "cs_t23",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_mus_23",
+      "age_range": "25-44",
+      "location": "Benin",
+      "archetype": "community",
+      "stated_preferences": [
+        "studio time",
+        "afrobeat samples",
+        "concerts"
+      ],
+      "budget_naira": 18000,
+      "occupation": "music producer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "trending"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: music producer in Benin with ₦18000"
+  },
+  {
+    "fixture_id": "cs_t24",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_res_24",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "default",
+      "stated_preferences": [
+        "catering equipment",
+        "fresh catfish",
+        "spices"
+      ],
+      "budget_naira": 55000,
+      "occupation": "restaurant owner",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "food",
+      "business"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: restaurant owner in Owerri with ₦55000"
+  },
+  {
+    "fixture_id": "cs_t25",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_tai_25",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "fabric remnants",
+        "sewing thread",
+        "lunch"
+      ],
+      "budget_naira": 5000,
+      "occupation": "tailor",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "handmade"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: tailor in Kano with ₦5000"
+  },
+  {
+    "fixture_id": "cs_t26",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_doc_26",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "spa weekend",
+        "lagos flight",
+        "designer watch"
+      ],
+      "budget_naira": 750000,
+      "occupation": "doctor",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "wellness"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: doctor in Port Harcourt with ₦750000"
+  },
+  {
+    "fixture_id": "cs_t27",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_cor_27",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "amala",
+        "gist",
+        "data subscription"
+      ],
+      "budget_naira": 8000,
+      "occupation": "corper",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "local_food",
+      "social"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: corper in Ibadan with ₦8000"
+  },
+  {
+    "fixture_id": "cs_t28",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_lec_28",
+      "age_range": "25-44",
+      "location": "Sokoto",
+      "archetype": "default",
+      "stated_preferences": [
+        "academic books",
+        "prayer mat",
+        "dates"
+      ],
+      "budget_naira": 150000,
+      "occupation": "lecturer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "faith",
+      "education"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: lecturer in Sokoto with ₦150000"
+  },
+  {
+    "fixture_id": "cs_t29",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_dis_29",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "fuel voucher",
+        "phone holder",
+        "suya"
+      ],
+      "budget_naira": 12000,
+      "occupation": "dispatch rider",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "value",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: dispatch rider in Lagos with ₦12000"
+  },
+  {
+    "fixture_id": "cs_t30",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_sen_30",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "diamond rings",
+        "chauffeur",
+        "exotic pets"
+      ],
+      "budget_naira": 900000,
+      "occupation": "senator's aide",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "premium"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: senator's aide in Abuja with ₦900000"
+  },
+  {
+    "fixture_id": "cs_t31",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_dj_31",
+      "age_range": "25-44",
+      "location": "Enugu",
+      "archetype": "community",
+      "stated_preferences": [
+        "speaker rental",
+        "party lights",
+        "small chops"
+      ],
+      "budget_naira": 25000,
+      "occupation": "dj",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "nightlife",
+      "music"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: dj in Enugu with ₦25000"
+  },
+  {
+    "fixture_id": "cs_t32",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_mec_32",
+      "age_range": "25-44",
+      "location": "Kaduna",
+      "archetype": "default",
+      "stated_preferences": [
+        "spanners",
+        "hydraulic jack",
+        "lunch"
+      ],
+      "budget_naira": 30000,
+      "occupation": "mechanic",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: mechanic in Kaduna with ₦30000"
+  },
+  {
+    "fixture_id": "cs_t33",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_vul_33",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "tyre patches",
+        "air pump",
+        "onunu"
+      ],
+      "budget_naira": 8000,
+      "occupation": "vulcanizer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: vulcanizer in Owerri with ₦8000"
+  },
+  {
+    "fixture_id": "cs_t34",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_hot_34",
+      "age_range": "25-44",
+      "location": "Calabar",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "exotic furniture",
+        "imported wine",
+        "event decor"
+      ],
+      "budget_naira": 400000,
+      "occupation": "hotel owner",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "home"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: hotel owner in Calabar with ₦400000"
+  },
+  {
+    "fixture_id": "cs_t35",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_pho_35",
+      "age_range": "25-44",
+      "location": "Jos",
+      "archetype": "community",
+      "stated_preferences": [
+        "camera lens",
+        "wedding album",
+        "groundnut soup"
+      ],
+      "budget_naira": 22000,
+      "occupation": "photographer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "creative",
+      "food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: photographer in Jos with ₦22000"
+  },
+  {
+    "fixture_id": "cs_t36",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_sof_36",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "ergonomic chair",
+        "noise canceling headphones",
+        "smoothie"
+      ],
+      "budget_naira": 100000,
+      "occupation": "software dev",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "wellness"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: software dev in Lagos with ₦100000"
+  },
+  {
+    "fixture_id": "cs_t37",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_mal_37",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "flashlight",
+        "boots",
+        "sharwama"
+      ],
+      "budget_naira": 6000,
+      "occupation": "mall security",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: mall security in Abuja with ₦6000"
+  },
+  {
+    "fixture_id": "cs_t38",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_log_38",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "gold chain",
+        "iphone 15",
+        "private chef"
+      ],
+      "budget_naira": 350000,
+      "occupation": "logistics CEO",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: logistics CEO in Port Harcourt with ₦350000"
+  },
+  {
+    "fixture_id": "cs_t39",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_stu_39",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "notebooks",
+        "indomie",
+        "browse data"
+      ],
+      "budget_naira": 14000,
+      "occupation": "student (UI)",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "education"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: student (UI) in Ibadan with ₦14000"
+  },
+  {
+    "fixture_id": "cs_t40",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_but_40",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "default",
+      "stated_preferences": [
+        "meat grinder",
+        "freezer",
+        "tuwo"
+      ],
+      "budget_naira": 40000,
+      "occupation": "butcher",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "food",
+      "business"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: butcher in Kano with ₦40000"
+  },
+  {
+    "fixture_id": "cs_t41",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_whe_41",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "eba",
+        "fish roll",
+        "fanta"
+      ],
+      "budget_naira": 2500,
+      "occupation": "wheelbarrow pusher",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "street_food",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: wheelbarrow pusher in Lagos with ₦2500"
+  },
+  {
+    "fixture_id": "cs_t42",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_ban_42",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "mercedes maybach rental",
+        "dior bag",
+        "caviar night"
+      ],
+      "budget_naira": 1200000,
+      "occupation": "bank director",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "premium"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: bank director in Abuja with ₦1200000"
+  },
+  {
+    "fixture_id": "cs_t43",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_car_43",
+      "age_range": "25-44",
+      "location": "Benin",
+      "archetype": "community",
+      "stated_preferences": [
+        "saw",
+        "nails",
+        "banga soup"
+      ],
+      "budget_naira": 30000,
+      "occupation": "carpenter",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "essential",
+      "local_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: carpenter in Benin with ₦30000"
+  },
+  {
+    "fixture_id": "cs_t44",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_pha_44",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "default",
+      "stated_preferences": [
+        "blood pressure monitor",
+        "vitamins",
+        "organic tea"
+      ],
+      "budget_naira": 200000,
+      "occupation": "pharmacist",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "health",
+      "wellness"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: pharmacist in Owerri with ₦200000"
+  },
+  {
+    "fixture_id": "cs_t45",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_fis_45",
+      "age_range": "25-44",
+      "location": "Sokoto",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "hook",
+        "net",
+        "millet drink"
+      ],
+      "budget_naira": 4000,
+      "occupation": "fisherman",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "agriculture"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: fisherman in Sokoto with ₦4000"
+  },
+  {
+    "fixture_id": "cs_t46",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_tru_46",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "community",
+      "stated_preferences": [
+        "energy drink",
+        "cold zobo",
+        "plantain chips"
+      ],
+      "budget_naira": 17000,
+      "occupation": "truck driver",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "street_food",
+      "value"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: truck driver in Port Harcourt with ₦17000"
+  },
+  {
+    "fixture_id": "cs_t47",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_pr__47",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "hijab luxury collection",
+        "spa retreat",
+        "gold jewelry"
+      ],
+      "budget_naira": 850000,
+      "occupation": "PR executive",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "faith_friendly"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: PR executive in Lagos with ₦850000"
+  },
+  {
+    "fixture_id": "cs_t48",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_okr_48",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "second hand clothes",
+        "mirror",
+        "beans cake"
+      ],
+      "budget_naira": 5000,
+      "occupation": "okrika seller",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "value"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: okrika seller in Ibadan with ₦5000"
+  },
+  {
+    "fixture_id": "cs_t49",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_nia_49",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "default",
+      "stated_preferences": [
+        "discreet camera",
+        "power bank",
+        "takeaway shawarma"
+      ],
+      "budget_naira": 65000,
+      "occupation": "NIA officer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: NIA officer in Abuja with ₦65000"
+  },
+  {
+    "fixture_id": "cs_t50",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_bak_50",
+      "age_range": "25-44",
+      "location": "Kaduna",
+      "archetype": "community",
+      "stated_preferences": [
+        "flour",
+        "sugar",
+        "egg roll"
+      ],
+      "budget_naira": 9000,
+      "occupation": "baker",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "food",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: baker in Kaduna with ₦9000"
+  },
+  {
+    "fixture_id": "cs_t51",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_dan_51",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "windshield cleaner",
+        "rag",
+        "gala and la casera"
+      ],
+      "budget_naira": 15000,
+      "occupation": "danfo driver",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "value",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: danfo driver in Lagos with ₦15000"
+  },
+  {
+    "fixture_id": "cs_t52",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_cos_52",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "snail mucin serum",
+        "microblading",
+        "chia pudding"
+      ],
+      "budget_naira": 550000,
+      "occupation": "cosmetics distributor",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "beauty",
+      "wellness"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: cosmetics distributor in Owerri with ₦550000"
+  },
+  {
+    "fixture_id": "cs_t53",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_tou_53",
+      "age_range": "25-44",
+      "location": "Calabar",
+      "archetype": "default",
+      "stated_preferences": [
+        "camera",
+        "local map",
+        "edikang ikong"
+      ],
+      "budget_naira": 12000,
+      "occupation": "tour guide",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "travel",
+      "local_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: tour guide in Calabar with ₦12000"
+  },
+  {
+    "fixture_id": "cs_t54",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_fit_54",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "community",
+      "stated_preferences": [
+        "protein powder",
+        "gym glove",
+        "grilled fish"
+      ],
+      "budget_naira": 23000,
+      "occupation": "fitness trainer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "wellness",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: fitness trainer in Lagos with ₦23000"
+  },
+  {
+    "fixture_id": "cs_t55",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_cle_55",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "detergent",
+        "gloves",
+        "zobo drink"
+      ],
+      "budget_naira": 8000,
+      "occupation": "cleaner",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: cleaner in Abuja with ₦8000"
+  },
+  {
+    "fixture_id": "cs_t56",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_oil_56",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "diamond earrings",
+        "bugatti rental",
+        "private island trip"
+      ],
+      "budget_naira": 700000,
+      "occupation": "oil magnate",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "premium"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: oil magnate in Port Harcourt with ₦700000"
+  },
+  {
+    "fixture_id": "cs_t57",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_jou_57",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "default",
+      "stated_preferences": [
+        "voice recorder",
+        "notepad",
+        "amala with ewedu"
+      ],
+      "budget_naira": 28000,
+      "occupation": "journalist",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "work",
+      "local_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: journalist in Ibadan with ₦28000"
+  },
+  {
+    "fixture_id": "cs_t58",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_tai_58",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "community",
+      "stated_preferences": [
+        "fabric scissors",
+        "thread",
+        "masa"
+      ],
+      "budget_naira": 11000,
+      "occupation": "tailor",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "handmade"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: tailor in Kano with ₦11000"
+  },
+  {
+    "fixture_id": "cs_t59",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_gat_59",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "torch",
+        "chair",
+        "pure water sachet"
+      ],
+      "budget_naira": 3500,
+      "occupation": "gate man",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: gate man in Lagos with ₦3500"
+  },
+  {
+    "fixture_id": "cs_t60",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_rea_60",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "customized range rover",
+        "dior perfume",
+        "caviar brunch"
+      ],
+      "budget_naira": 950000,
+      "occupation": "real estate mogul",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "premium"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: real estate mogul in Abuja with ₦950000"
+  },
+  {
+    "fixture_id": "cs_t61",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_bar_61",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "clipper",
+        "hair gel",
+        "isiewu"
+      ],
+      "budget_naira": 16000,
+      "occupation": "barbing salon owner",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "grooming",
+      "local_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: barbing salon owner in Owerri with ₦16000"
+  },
+  {
+    "fixture_id": "cs_t62",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_clo_62",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "macbook stand",
+        "noise isolating earbuds",
+        "matcha latte"
+      ],
+      "budget_naira": 180000,
+      "occupation": "cloud engineer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "wellness"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: cloud engineer in Lagos with ₦180000"
+  },
+  {
+    "fixture_id": "cs_t63",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_yout_63",
+      "age_range": "25-44",
+      "location": "Benin",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "bicycle repair",
+        "indomie",
+        "pure water"
+      ],
+      "budget_naira": 4500,
+      "occupation": "youth corps member",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: youth corps member in Benin with ₦4500"
+  },
+  {
+    "fixture_id": "cs_t64",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_eve_64",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "luxury tent",
+        "fireworks",
+        "jollof rice station"
+      ],
+      "budget_naira": 480000,
+      "occupation": "event planner",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "events",
+      "premium"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: event planner in Port Harcourt with ₦480000"
+  },
+  {
+    "fixture_id": "cs_t65",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_mus_65",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "guitar string",
+        "recording mic",
+        "pounded yam"
+      ],
+      "budget_naira": 19000,
+      "occupation": "musician",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: musician in Ibadan with ₦19000"
+  },
+  {
+    "fixture_id": "cs_t66",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_nur_66",
+      "age_range": "25-44",
+      "location": "Kaduna",
+      "archetype": "default",
+      "stated_preferences": [
+        "stethoscope",
+        "hand sanitizer",
+        "kilishi"
+      ],
+      "budget_naira": 72000,
+      "occupation": "nurse",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "health",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: nurse in Kaduna with ₦72000"
+  },
+  {
+    "fixture_id": "cs_t67",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_bus_67",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "okada ride",
+        "biscuit",
+        "coke"
+      ],
+      "budget_naira": 2200,
+      "occupation": "bus park tout",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "value"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: bus park tout in Lagos with ₦2200"
+  },
+  {
+    "fixture_id": "cs_t68",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_sen_68",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "coral bead set",
+        "private jet charter",
+        "gold gele"
+      ],
+      "budget_naira": 1500000,
+      "occupation": "senator's wife",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "heritage"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: senator's wife in Abuja with ₦1500000"
+  },
+  {
+    "fixture_id": "cs_t69",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_fas_69",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "gele pin",
+        "fabric steamer",
+        "okpa"
+      ],
+      "budget_naira": 27000,
+      "occupation": "fashion stylist",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "fashion",
+      "food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: fashion stylist in Owerri with ₦27000"
+  },
+  {
+    "fixture_id": "cs_t70",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_fin_70",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "dual monitor",
+        "blue light glasses",
+        "sushi"
+      ],
+      "budget_naira": 95000,
+      "occupation": "fintech analyst",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "premium_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: fintech analyst in Lagos with ₦95000"
+  },
+  {
+    "fixture_id": "cs_t71",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_fis_71",
+      "age_range": "25-44",
+      "location": "Calabar",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "fish feed",
+        "pump",
+        "fresh catfish pepper soup"
+      ],
+      "budget_naira": 6000,
+      "occupation": "fish farmer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "agriculture",
+      "local_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: fish farmer in Calabar with ₦6000"
+  },
+  {
+    "fixture_id": "cs_t72",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_md__72",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "italian marble tiles",
+        "chandelier",
+        "escort service"
+      ],
+      "budget_naira": 620000,
+      "occupation": "MD of construction firm",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "home"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: MD of construction firm in Port Harcourt with ₦620000"
+  },
+  {
+    "fixture_id": "cs_t73",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_rad_73",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "microphone",
+        "headphones",
+        "gizzard and chips"
+      ],
+      "budget_naira": 13000,
+      "occupation": "radio presenter",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "media",
+      "food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: radio presenter in Ibadan with ₦13000"
+  },
+  {
+    "fixture_id": "cs_t74",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_tea_74",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "marker pen",
+        "lesson note",
+        "buka rice"
+      ],
+      "budget_naira": 40000,
+      "occupation": "teacher",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "education",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: teacher in Lagos with ₦40000"
+  },
+  {
+    "fixture_id": "cs_t75",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_com_75",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "brake pad",
+        "clutch cable",
+        "suya roll"
+      ],
+      "budget_naira": 7000,
+      "occupation": "commercial driver",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: commercial driver in Abuja with ₦7000"
+  },
+  {
+    "fixture_id": "cs_t76",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_spi_76",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "saffron",
+        "imported dates",
+        "handwoven carpet"
+      ],
+      "budget_naira": 380000,
+      "occupation": "spice trader",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "food"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: spice trader in Kano with ₦380000"
+  },
+  {
+    "fixture_id": "cs_t77",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_com_77",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "mic stand",
+        "costume",
+        "native soup"
+      ],
+      "budget_naira": 21000,
+      "occupation": "comedian",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "entertainment",
+      "food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: comedian in Owerri with ₦21000"
+  },
+  {
+    "fixture_id": "cs_t78",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_new_78",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "plastic chair",
+        "umbrella",
+        "egg roll"
+      ],
+      "budget_naira": 3200,
+      "occupation": "newspaper vendor",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "street_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: newspaper vendor in Lagos with ₦3200"
+  },
+  {
+    "fixture_id": "cs_t79",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_oil_79",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "rolex watch",
+        "safari trip",
+        "private gym trainer"
+      ],
+      "budget_naira": 2000000,
+      "occupation": "oil executive",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "wellness"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: oil executive in Abuja with ₦2000000"
+  },
+  {
+    "fixture_id": "cs_t80",
+    "scenario": "zero_history",
+    "user_profile": {
+      "user_id": "cs_mar_80",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "default",
+      "stated_preferences": [
+        "gps device",
+        "waterproof jacket",
+        "fresh crab"
+      ],
+      "budget_naira": 51000,
+      "occupation": "marine engineer",
+      "purchase_history": []
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "local_food"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "Nigerian real-life scenario: marine engineer in Port Harcourt with ₦51000"
+  },
+  {
+    "fixture_id": "cs_t81",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_graphic_designer_81",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "adobe software"
+      ],
+      "budget_naira": 25000,
+      "occupation": "graphic designer",
+      "purchase_history": [
+        [
+          "el_001",
+          4.5
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "wellness"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t82",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_diplomat_82",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "luxury perfume"
+      ],
+      "budget_naira": 180000,
+      "occupation": "diplomat",
+      "purchase_history": [
+        [
+          "fs_009",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "beauty"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t83",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_bike_repairer_83",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "spare tire"
+      ],
+      "budget_naira": 6000,
+      "occupation": "bike repairer",
+      "purchase_history": [
+        [
+          "au_003",
+          4.2
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t84",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_caterer_84",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "festival attendance"
+      ],
+      "budget_naira": 14000,
+      "occupation": "caterer",
+      "purchase_history": [
+        [
+          "ce_004",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "food",
+      "events"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t85",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_textile_trader_85",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "default",
+      "stated_preferences": [
+        "fabric scissors"
+      ],
+      "budget_naira": 80000,
+      "occupation": "textile trader",
+      "purchase_history": [
+        [
+          "fs_007",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "fashion",
+      "handmade"
+    ],
+    "expected_recommendation_excludes": [
+      "tech"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t86",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_shipping_exec_86",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "gold chain"
+      ],
+      "budget_naira": 220000,
+      "occupation": "shipping exec",
+      "purchase_history": [
+        [
+          "jwl_002",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "prestige"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t87",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_dancer_87",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "community",
+      "stated_preferences": [
+        "afrobeat workshop"
+      ],
+      "budget_naira": 33000,
+      "occupation": "dancer",
+      "purchase_history": [
+        [
+          "ce_012",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "trending"
+    ],
+    "expected_recommendation_excludes": [
+      "corporate"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t88",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_policeman_88",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "flashlight"
+      ],
+      "budget_naira": 5500,
+      "occupation": "policeman",
+      "purchase_history": [
+        [
+          "el_009",
+          4.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t89",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_civil_engineer_89",
+      "age_range": "25-44",
+      "location": "Benin",
+      "archetype": "default",
+      "stated_preferences": [
+        "solar inverter"
+      ],
+      "budget_naira": 47000,
+      "occupation": "civil engineer",
+      "purchase_history": [
+        [
+          "el_013",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "energy"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t90",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_restaurateur_90",
+      "age_range": "25-44",
+      "location": "Calabar",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "exotic spice set"
+      ],
+      "budget_naira": 95000,
+      "occupation": "restaurateur",
+      "purchase_history": [
+        [
+          "fd_022",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "food",
+      "premium"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t91",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_security_guard_91",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "heavy torch"
+      ],
+      "budget_naira": 3800,
+      "occupation": "security guard",
+      "purchase_history": [
+        [
+          "el_001",
+          4.2
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "value"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t92",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_producer_92",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "studio mic"
+      ],
+      "budget_naira": 29000,
+      "occupation": "producer",
+      "purchase_history": [
+        [
+          "mu_008",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "creativity"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t93",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_safety_officer_93",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "default",
+      "stated_preferences": [
+        "work boots"
+      ],
+      "budget_naira": 62000,
+      "occupation": "safety officer",
+      "purchase_history": [
+        [
+          "sh_004",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "work",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "fine_dining"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t94",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_university_dean_94",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "academic robes"
+      ],
+      "budget_naira": 310000,
+      "occupation": "university dean",
+      "purchase_history": [
+        [
+          "fs_015",
+          4.6
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "education"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t95",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_okada_rider_95",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "helmet"
+      ],
+      "budget_naira": 4200,
+      "occupation": "okada rider",
+      "purchase_history": [
+        [
+          "au_001",
+          4.1
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t96",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_barista_96",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "community",
+      "stated_preferences": [
+        "coffee machine"
+      ],
+      "budget_naira": 15000,
+      "occupation": "barista",
+      "purchase_history": [
+        [
+          "fd_003",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "food",
+      "social"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t97",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_livestock_farmer_97",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "default",
+      "stated_preferences": [
+        "animal feed"
+      ],
+      "budget_naira": 50000,
+      "occupation": "livestock farmer",
+      "purchase_history": [
+        [
+          "ag_010",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "agriculture",
+      "utility"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t98",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_lawyer_98",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "designer bag"
+      ],
+      "budget_naira": 400000,
+      "occupation": "lawyer",
+      "purchase_history": [
+        [
+          "fs_020",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "prestige"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t99",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_praise_singer_99",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "community",
+      "stated_preferences": [
+        "drum set"
+      ],
+      "budget_naira": 19000,
+      "occupation": "praise singer",
+      "purchase_history": [
+        [
+          "mu_002",
+          4.5
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "faith"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t100",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_boat_captain_100",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "life jacket"
+      ],
+      "budget_naira": 2800,
+      "occupation": "boat captain",
+      "purchase_history": [
+        [
+          "au_005",
+          4.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t101",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_librarian_101",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "default",
+      "stated_preferences": [
+        "book stand"
+      ],
+      "budget_naira": 37000,
+      "occupation": "librarian",
+      "purchase_history": [
+        [
+          "ed_001",
+          4.6
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "education",
+      "quiet"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t102",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_stockbroker_102",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "gold watch"
+      ],
+      "budget_naira": 680000,
+      "occupation": "stockbroker",
+      "purchase_history": [
+        [
+          "jwl_009",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "finance"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t103",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_fuel_attendant_103",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "fuel nozzle"
+      ],
+      "budget_naira": 13000,
+      "occupation": "fuel attendant",
+      "purchase_history": [
+        [
+          "au_002",
+          4.3
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "value"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t104",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_bricklayer_104",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "trowel"
+      ],
+      "budget_naira": 26000,
+      "occupation": "bricklayer",
+      "purchase_history": [
+        [
+          "to_001",
+          4.4
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "essential",
+      "work"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t105",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_pharmacist_105",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "default",
+      "stated_preferences": [
+        "stethoscope"
+      ],
+      "budget_naira": 85000,
+      "occupation": "pharmacist",
+      "purchase_history": [
+        [
+          "hl_003",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "health",
+      "wellness"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t106",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_celebrity_stylist_106",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "luxury gele"
+      ],
+      "budget_naira": 780000,
+      "occupation": "celebrity stylist",
+      "purchase_history": [
+        [
+          "fs_025",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "fashion",
+      "premium"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t107",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_chef_107",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "community",
+      "stated_preferences": [
+        "knife set"
+      ],
+      "budget_naira": 18000,
+      "occupation": "chef",
+      "purchase_history": [
+        [
+          "fd_012",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "food",
+      "culinary"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t108",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_cab_driver_108",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "GPS tracker"
+      ],
+      "budget_naira": 9000,
+      "occupation": "cab driver",
+      "purchase_history": [
+        [
+          "el_006",
+          4.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "automotive"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t109",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_counselor_109",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "default",
+      "stated_preferences": [
+        "journal book"
+      ],
+      "budget_naira": 44000,
+      "occupation": "counselor",
+      "purchase_history": [
+        [
+          "ed_005",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "wellness",
+      "education"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t110",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_hotelier_110",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "imported wine"
+      ],
+      "budget_naira": 510000,
+      "occupation": "hotelier",
+      "purchase_history": [
+        [
+          "fd_040",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "hospitality"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t111",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_voice_actor_111",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "community",
+      "stated_preferences": [
+        "mic shield"
+      ],
+      "budget_naira": 32000,
+      "occupation": "voice actor",
+      "purchase_history": [
+        [
+          "mu_006",
+          4.6
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "creativity",
+      "media"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t112",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_bicycle_courier_112",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "bike chain"
+      ],
+      "budget_naira": 4500,
+      "occupation": "bicycle courier",
+      "purchase_history": [
+        [
+          "au_007",
+          4.1
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t113",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_cyber_security_113",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "default",
+      "stated_preferences": [
+        "encrypted USB"
+      ],
+      "budget_naira": 210000,
+      "occupation": "cyber security",
+      "purchase_history": [
+        [
+          "el_018",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "security"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t114",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_fashion_mogul_114",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "custom agbada"
+      ],
+      "budget_naira": 890000,
+      "occupation": "fashion mogul",
+      "purchase_history": [
+        [
+          "fs_030",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "fashion"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t115",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_potter_115",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "clay tool"
+      ],
+      "budget_naira": 15000,
+      "occupation": "potter",
+      "purchase_history": [
+        [
+          "ar_002",
+          4.5
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "art",
+      "handmade"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t116",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_laundryman_116",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "iron box"
+      ],
+      "budget_naira": 3200,
+      "occupation": "laundryman",
+      "purchase_history": [
+        [
+          "hm_001",
+          4.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t117",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_insurance_agent_117",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "default",
+      "stated_preferences": [
+        "policy folder"
+      ],
+      "budget_naira": 56000,
+      "occupation": "insurance agent",
+      "purchase_history": [
+        [
+          "bs_002",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "business",
+      "finance"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t118",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_senator_118",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "gold pen"
+      ],
+      "budget_naira": 720000,
+      "occupation": "senator",
+      "purchase_history": [
+        [
+          "jwl_012",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "prestige"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t119",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_dye_maker_119",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "community",
+      "stated_preferences": [
+        "indigo pot"
+      ],
+      "budget_naira": 11000,
+      "occupation": "dye maker",
+      "purchase_history": [
+        [
+          "ar_005",
+          4.6
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "art",
+      "heritage"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t120",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_data_analyst_120",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "external SSD"
+      ],
+      "budget_naira": 93000,
+      "occupation": "data analyst",
+      "purchase_history": [
+        [
+          "el_020",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "work"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t121",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_fisherman_121",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "fishing net"
+      ],
+      "budget_naira": 5500,
+      "occupation": "fisherman",
+      "purchase_history": [
+        [
+          "ag_007",
+          4.2
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "agriculture",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t122",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_brewery_exec_122",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "beer mug"
+      ],
+      "budget_naira": 275000,
+      "occupation": "brewery exec",
+      "purchase_history": [
+        [
+          "fd_018",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "beverage",
+      "premium"
+    ],
+    "expected_recommendation_excludes": [
+      "faith"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t123",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_tailor_123",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "sewing machine oil"
+      ],
+      "budget_naira": 19000,
+      "occupation": "tailor",
+      "purchase_history": [
+        [
+          "fs_009",
+          4.5
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "fashion",
+      "handmade"
+    ],
+    "expected_recommendation_excludes": [
+      "tech"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t124",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_ngo_worker_124",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "default",
+      "stated_preferences": [
+        "laptop bag"
+      ],
+      "budget_naira": 48000,
+      "occupation": "NGO worker",
+      "purchase_history": [
+        [
+          "el_004",
+          4.6
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "work",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t125",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_shoe_shiner_125",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "polish brush"
+      ],
+      "budget_naira": 2700,
+      "occupation": "shoe shiner",
+      "purchase_history": [
+        [
+          "hm_003",
+          4.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "value"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t126",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_textile_magnate_126",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "silk fabric"
+      ],
+      "budget_naira": 635000,
+      "occupation": "textile magnate",
+      "purchase_history": [
+        [
+          "fs_035",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "fashion"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t127",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_dancer_127",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "community",
+      "stated_preferences": [
+        "dance shoe"
+      ],
+      "budget_naira": 23000,
+      "occupation": "dancer",
+      "purchase_history": [
+        [
+          "mu_010",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "performance"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t128",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_veterinarian_128",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "default",
+      "stated_preferences": [
+        "stethoscope"
+      ],
+      "budget_naira": 39000,
+      "occupation": "veterinarian",
+      "purchase_history": [
+        [
+          "hl_006",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "health",
+      "animals"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t129",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_waste_picker_129",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "gloves"
+      ],
+      "budget_naira": 4800,
+      "occupation": "waste picker",
+      "purchase_history": [
+        [
+          "hm_005",
+          4.1
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t130",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_ambassador_130",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "diplomatic passport case"
+      ],
+      "budget_naira": 1100000,
+      "occupation": "ambassador",
+      "purchase_history": [
+        [
+          "jwl_018",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "travel"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t131",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_solution_architect_131",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "mechanical keyboard"
+      ],
+      "budget_naira": 150000,
+      "occupation": "solution architect",
+      "purchase_history": [
+        [
+          "el_022",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "productivity"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t132",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_calligrapher_132",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "community",
+      "stated_preferences": [
+        "qalam pen"
+      ],
+      "budget_naira": 24000,
+      "occupation": "calligrapher",
+      "purchase_history": [
+        [
+          "ar_008",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "art",
+      "faith"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t133",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_auto_electrician_133",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "multimeter"
+      ],
+      "budget_naira": 6200,
+      "occupation": "auto electrician",
+      "purchase_history": [
+        [
+          "au_010",
+          4.3
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t134",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_publisher_134",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "leather notebook"
+      ],
+      "budget_naira": 450000,
+      "occupation": "publisher",
+      "purchase_history": [
+        [
+          "bs_005",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "media"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t135",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_logistics_officer_135",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "default",
+      "stated_preferences": [
+        "cargo tracker"
+      ],
+      "budget_naira": 64000,
+      "occupation": "logistics officer",
+      "purchase_history": [
+        [
+          "el_015",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "work",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t136",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_event_planner_136",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "community",
+      "stated_preferences": [
+        "decor light"
+      ],
+      "budget_naira": 28000,
+      "occupation": "event planner",
+      "purchase_history": [
+        [
+          "ev_002",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "events",
+      "creativity"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t137",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_mall_cleaner_137",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "mop"
+      ],
+      "budget_naira": 4000,
+      "occupation": "mall cleaner",
+      "purchase_history": [
+        [
+          "hm_007",
+          4.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t138",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_gold_dealer_138",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "gold scale"
+      ],
+      "budget_naira": 820000,
+      "occupation": "gold dealer",
+      "purchase_history": [
+        [
+          "jwl_022",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "prestige"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t139",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_surveyor_139",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "default",
+      "stated_preferences": [
+        "measuring tape"
+      ],
+      "budget_naira": 71000,
+      "occupation": "surveyor",
+      "purchase_history": [
+        [
+          "to_004",
+          4.6
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "work",
+      "tools"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t140",
+    "scenario": "minimal_history",
+    "user_profile": {
+      "user_id": "cs_drummer_140",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "talking drum"
+      ],
+      "budget_naira": 20000,
+      "occupation": "drummer",
+      "purchase_history": [
+        [
+          "mu_015",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "heritage"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": ""
+  },
+  {
+    "fixture_id": "cs_t141",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_architect_141",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "3D modeling software"
+      ],
+      "budget_naira": 87000,
+      "occupation": "architect",
+      "purchase_history": [
+        [
+          "el_001",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "work"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": "power bank or monitor stand"
+  },
+  {
+    "fixture_id": "cs_t142",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_consultant_142",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "business class lounge"
+      ],
+      "budget_naira": 345000,
+      "occupation": "consultant",
+      "purchase_history": [
+        [
+          "fs_009",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "business"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": "designer laptop bag or luxury pen"
+  },
+  {
+    "fixture_id": "cs_t143",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_battery_charger_143",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "old phone repair"
+      ],
+      "budget_naira": 5600,
+      "occupation": "battery charger",
+      "purchase_history": [
+        [
+          "au_003",
+          4.2
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": "new phone case or power bank"
+  },
+  {
+    "fixture_id": "cs_t144",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_choir_leader_144",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "hymn book"
+      ],
+      "budget_naira": 33000,
+      "occupation": "choir leader",
+      "purchase_history": [
+        [
+          "mu_004",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "faith"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "wireless mic or music stand"
+  },
+  {
+    "fixture_id": "cs_t145",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_poultry_farmer_145",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "default",
+      "stated_preferences": [
+        "egg incubator"
+      ],
+      "budget_naira": 95000,
+      "occupation": "poultry farmer",
+      "purchase_history": [
+        [
+          "ag_007",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "agriculture",
+      "energy"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "generator or feed mixer"
+  },
+  {
+    "fixture_id": "cs_t146",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_shipping_magnate_146",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "cargo ship model"
+      ],
+      "budget_naira": 515000,
+      "occupation": "shipping magnate",
+      "purchase_history": [
+        [
+          "jwl_002",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "travel"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "gold anchor pendant or luxury travel bag"
+  },
+  {
+    "fixture_id": "cs_t147",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_podcaster_147",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "community",
+      "stated_preferences": [
+        "recording mic"
+      ],
+      "budget_naira": 24000,
+      "occupation": "podcaster",
+      "purchase_history": [
+        [
+          "el_006",
+          4.6
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "media",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": "soundproof foam or headphones"
+  },
+  {
+    "fixture_id": "cs_t148",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_road_sweeper_148",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "broom"
+      ],
+      "budget_naira": 4800,
+      "occupation": "road sweeper",
+      "purchase_history": [
+        [
+          "hm_001",
+          4.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "dustpan or gloves"
+  },
+  {
+    "fixture_id": "cs_t149",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_museum_curator_149",
+      "age_range": "25-44",
+      "location": "Benin",
+      "archetype": "default",
+      "stated_preferences": [
+        "artefact box"
+      ],
+      "budget_naira": 69000,
+      "occupation": "museum curator",
+      "purchase_history": [
+        [
+          "ar_002",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "art",
+      "heritage"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": "display case or art book"
+  },
+  {
+    "fixture_id": "cs_t150",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_film_producer_150",
+      "age_range": "25-44",
+      "location": "Calabar",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "clapperboard"
+      ],
+      "budget_naira": 430000,
+      "occupation": "film producer",
+      "purchase_history": [
+        [
+          "fs_015",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "media"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": "director's chair or luxury makeup kit"
+  },
+  {
+    "fixture_id": "cs_t151",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_robotics_engineer_151",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "arduino kit"
+      ],
+      "budget_naira": 112000,
+      "occupation": "robotics engineer",
+      "purchase_history": [
+        [
+          "el_013",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "education"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "soldering iron or drone kit"
+  },
+  {
+    "fixture_id": "cs_t152",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_wedding_planner_152",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "confetti cannon"
+      ],
+      "budget_naira": 18000,
+      "occupation": "wedding planner",
+      "purchase_history": [
+        [
+          "ev_002",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "events",
+      "creativity"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "decor lights or flower stand"
+  },
+  {
+    "fixture_id": "cs_t153",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_car_wash_attendant_153",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "pressure hose"
+      ],
+      "budget_naira": 7500,
+      "occupation": "car wash attendant",
+      "purchase_history": [
+        [
+          "au_005",
+          4.3
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": "sponge set or soap"
+  },
+  {
+    "fixture_id": "cs_t154",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_beauty_brand_owner_154",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "lash kit"
+      ],
+      "budget_naira": 290000,
+      "occupation": "beauty brand owner",
+      "purchase_history": [
+        [
+          "fs_020",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "beauty",
+      "luxury"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": "vanity mirror or luxury skincare"
+  },
+  {
+    "fixture_id": "cs_t155",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_eco_consultant_155",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "default",
+      "stated_preferences": [
+        "recycle bin"
+      ],
+      "budget_naira": 54000,
+      "occupation": "eco consultant",
+      "purchase_history": [
+        [
+          "hl_003",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "wellness",
+      "environment"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": "compost kit or reusable bottle"
+  },
+  {
+    "fixture_id": "cs_t156",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_henna_artist_156",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "community",
+      "stated_preferences": [
+        "cone bag"
+      ],
+      "budget_naira": 21000,
+      "occupation": "henna artist",
+      "purchase_history": [
+        [
+          "ar_005",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "art",
+      "heritage"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "designer stencil or natural oil"
+  },
+  {
+    "fixture_id": "cs_t157",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_mobile_seller_157",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "phone stand"
+      ],
+      "budget_naira": 6000,
+      "occupation": "mobile seller",
+      "purchase_history": [
+        [
+          "el_001",
+          4.4
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "screen protector or charger"
+  },
+  {
+    "fixture_id": "cs_t158",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_real_estate_dev_158",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "land deed"
+      ],
+      "budget_naira": 667000,
+      "occupation": "real estate dev",
+      "purchase_history": [
+        [
+          "bs_005",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "business"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": "property drone or luxury office chair"
+  },
+  {
+    "fixture_id": "cs_t159",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_marine_pilot_159",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "default",
+      "stated_preferences": [
+        "compass"
+      ],
+      "budget_naira": 81000,
+      "occupation": "marine pilot",
+      "purchase_history": [
+        [
+          "au_010",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "travel",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": "waterproof watch or GPS device"
+  },
+  {
+    "fixture_id": "cs_t160",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_traditional_ruler_160",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "beaded crown"
+      ],
+      "budget_naira": 27000,
+      "occupation": "traditional ruler",
+      "purchase_history": [
+        [
+          "fs_025",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "heritage",
+      "prestige"
+    ],
+    "expected_recommendation_excludes": [
+      "budget"
+    ],
+    "evaluation_notes": "ceremonial umbrella or royal stool"
+  },
+  {
+    "fixture_id": "cs_t161",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_okrika_dealer_161",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "bale of clothes"
+      ],
+      "budget_naira": 4200,
+      "occupation": "okrika dealer",
+      "purchase_history": [
+        [
+          "fs_003",
+          4.5
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "fashion",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": "hanger rack or mirror"
+  },
+  {
+    "fixture_id": "cs_t162",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_tech_ceo_162",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "smart watch"
+      ],
+      "budget_naira": 900000,
+      "occupation": "tech ceo",
+      "purchase_history": [
+        [
+          "el_022",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "luxury"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": "wireless earbuds or luxury smart ring"
+  },
+  {
+    "fixture_id": "cs_t163",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_tannery_worker_163",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "default",
+      "stated_preferences": [
+        "leather knife"
+      ],
+      "budget_naira": 46000,
+      "occupation": "tannery worker",
+      "purchase_history": [
+        [
+          "fs_009",
+          4.6
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "handmade",
+      "work"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "leather conditioner or gloves"
+  },
+  {
+    "fixture_id": "cs_t164",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_comedian_164",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "community",
+      "stated_preferences": [
+        "stage mic"
+      ],
+      "budget_naira": 14000,
+      "occupation": "comedian",
+      "purchase_history": [
+        [
+          "mu_008",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "entertainment",
+      "social"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": "comedy script book or speaker"
+  },
+  {
+    "fixture_id": "cs_t165",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_tire_repairer_165",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "patch kit"
+      ],
+      "budget_naira": 5300,
+      "occupation": "tire repairer",
+      "purchase_history": [
+        [
+          "au_002",
+          4.2
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "air pump or valve tool"
+  },
+  {
+    "fixture_id": "cs_t166",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_hotelier_166",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "mini bar fridge"
+      ],
+      "budget_naira": 375000,
+      "occupation": "hotelier",
+      "purchase_history": [
+        [
+          "fd_018",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "food"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": "wine glasses or luxury decanter"
+  },
+  {
+    "fixture_id": "cs_t167",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_blockchain_dev_167",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "ledger wallet"
+      ],
+      "budget_naira": 132000,
+      "occupation": "blockchain dev",
+      "purchase_history": [
+        [
+          "el_018",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "finance"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": "hardware wallet case or crypto book"
+  },
+  {
+    "fixture_id": "cs_t168",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_broadcaster_168",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "community",
+      "stated_preferences": [
+        "studio mic arm"
+      ],
+      "budget_naira": 29000,
+      "occupation": "broadcaster",
+      "purchase_history": [
+        [
+          "mu_006",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "media",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "pop filter or audio interface"
+  },
+  {
+    "fixture_id": "cs_t169",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_battery_charger_169",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "jump cable"
+      ],
+      "budget_naira": 3900,
+      "occupation": "battery charger",
+      "purchase_history": [
+        [
+          "au_007",
+          4.1
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "automotive",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": "multimeter or fuse"
+  },
+  {
+    "fixture_id": "cs_t170",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_hajj_organizer_170",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "prayer rug"
+      ],
+      "budget_naira": 560000,
+      "occupation": "hajj organizer",
+      "purchase_history": [
+        [
+          "fs_030",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "faith",
+      "luxury"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "luxury misbaha or travel bag"
+  },
+  {
+    "fixture_id": "cs_t171",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_diver_171",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "default",
+      "stated_preferences": [
+        "oxygen tank"
+      ],
+      "budget_naira": 74000,
+      "occupation": "diver",
+      "purchase_history": [
+        [
+          "hl_006",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "travel",
+      "wellness"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": "snorkel or waterproof camera"
+  },
+  {
+    "fixture_id": "cs_t172",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_sculptor_172",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "chisel"
+      ],
+      "budget_naira": 16000,
+      "occupation": "sculptor",
+      "purchase_history": [
+        [
+          "ar_008",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "art",
+      "handmade"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "mallet or clay"
+  },
+  {
+    "fixture_id": "cs_t173",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_bus_park_cleaner_173",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "dustbin"
+      ],
+      "budget_naira": 2600,
+      "occupation": "bus park cleaner",
+      "purchase_history": [
+        [
+          "hm_005",
+          4.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": "gloves or bleach"
+  },
+  {
+    "fixture_id": "cs_t174",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_mining_exec_174",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "gold bar sample"
+      ],
+      "budget_naira": 800000,
+      "occupation": "mining exec",
+      "purchase_history": [
+        [
+          "jwl_012",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "investment"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": "gold detector or luxury safe"
+  },
+  {
+    "fixture_id": "cs_t175",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_public_health_officer_175",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "default",
+      "stated_preferences": [
+        "sanitizer dispenser"
+      ],
+      "budget_naira": 51000,
+      "occupation": "public health officer",
+      "purchase_history": [
+        [
+          "hl_003",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "health",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "thermometer or mask pack"
+  },
+  {
+    "fixture_id": "cs_t176",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_carnival_masquerade_176",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "community",
+      "stated_preferences": [
+        "feather costume"
+      ],
+      "budget_naira": 20000,
+      "occupation": "carnival masquerade",
+      "purchase_history": [
+        [
+          "ev_005",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "festival",
+      "culture"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": "drum or face paint"
+  },
+  {
+    "fixture_id": "cs_t177",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_groundnut_seller_177",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "weighing scale"
+      ],
+      "budget_naira": 4900,
+      "occupation": "groundnut seller",
+      "purchase_history": [
+        [
+          "ag_010",
+          4.3
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "agriculture",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "roaster or sack"
+  },
+  {
+    "fixture_id": "cs_t178",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_media_owner_178",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "tv camera"
+      ],
+      "budget_naira": 480000,
+      "occupation": "media owner",
+      "purchase_history": [
+        [
+          "mu_015",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "media"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": "tripod or luxury director chair"
+  },
+  {
+    "fixture_id": "cs_t179",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_data_scientist_179",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "external hdd"
+      ],
+      "budget_naira": 105000,
+      "occupation": "data scientist",
+      "purchase_history": [
+        [
+          "el_020",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "work"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": "ssd enclosure or backup drive"
+  },
+  {
+    "fixture_id": "cs_t180",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_spoken_word_poet_180",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "community",
+      "stated_preferences": [
+        "notebook"
+      ],
+      "budget_naira": 23000,
+      "occupation": "spoken word poet",
+      "purchase_history": [
+        [
+          "ed_005",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "art",
+      "creativity"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "pen set or voice recorder"
+  },
+  {
+    "fixture_id": "cs_t181",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_coconut_seller_181",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "machete"
+      ],
+      "budget_naira": 3500,
+      "occupation": "coconut seller",
+      "purchase_history": [
+        [
+          "to_001",
+          4.1
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": "knife sharpener or grater"
+  },
+  {
+    "fixture_id": "cs_t182",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_pipeline_contractor_182",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "safety helmet"
+      ],
+      "budget_naira": 620000,
+      "occupation": "pipeline contractor",
+      "purchase_history": [
+        [
+          "to_004",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "work"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": "luxury boot or designer hard hat"
+  },
+  {
+    "fixture_id": "cs_t183",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_leather_tanner_183",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "default",
+      "stated_preferences": [
+        "dye vat"
+      ],
+      "budget_naira": 88000,
+      "occupation": "leather tanner",
+      "purchase_history": [
+        [
+          "ar_005",
+          4.6
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "handmade",
+      "work"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "leather apron or drying rack"
+  },
+  {
+    "fixture_id": "cs_t184",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_drum_maker_184",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "drum skin"
+      ],
+      "budget_naira": 17000,
+      "occupation": "drum maker",
+      "purchase_history": [
+        [
+          "mu_015",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "handmade"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "tuning key or beater"
+  },
+  {
+    "fixture_id": "cs_t185",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_recharge_card_seller_185",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "phone pouch"
+      ],
+      "budget_naira": 4100,
+      "occupation": "recharge card seller",
+      "purchase_history": [
+        [
+          "el_001",
+          4.4
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": "sim holder or power bank"
+  },
+  {
+    "fixture_id": "cs_t186",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_oil_executive_186",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "oil barrel keychain"
+      ],
+      "budget_naira": 950000,
+      "occupation": "oil executive",
+      "purchase_history": [
+        [
+          "jwl_018",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "energy"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": "gold oil drop pendant or luxury briefcase"
+  },
+  {
+    "fixture_id": "cs_t187",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_agronomist_187",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "default",
+      "stated_preferences": [
+        "soil test kit"
+      ],
+      "budget_naira": 68000,
+      "occupation": "agronomist",
+      "purchase_history": [
+        [
+          "ag_007",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "agriculture",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": "ph meter or seed tray"
+  },
+  {
+    "fixture_id": "cs_t188",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_boat_maker_188",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "community",
+      "stated_preferences": [
+        "wood plane"
+      ],
+      "budget_naira": 25000,
+      "occupation": "boat maker",
+      "purchase_history": [
+        [
+          "to_004",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "handmade",
+      "work"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "sanding paper or varnish"
+  },
+  {
+    "fixture_id": "cs_t189",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_milk_seller_189",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "milking can"
+      ],
+      "budget_naira": 5200,
+      "occupation": "milk seller",
+      "purchase_history": [
+        [
+          "ag_010",
+          4.3
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "agriculture",
+      "budget"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "strainer or cooler"
+  },
+  {
+    "fixture_id": "cs_t190",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_law_firm_partner_190",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "law bookshelf"
+      ],
+      "budget_naira": 410000,
+      "occupation": "law firm partner",
+      "purchase_history": [
+        [
+          "bs_002",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "education"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": "luxury pen set or leather chair"
+  },
+  {
+    "fixture_id": "cs_t191",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_product_manager_191",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "default",
+      "stated_preferences": [
+        "post-it notes"
+      ],
+      "budget_naira": 119000,
+      "occupation": "product manager",
+      "purchase_history": [
+        [
+          "el_022",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "tech",
+      "work"
+    ],
+    "expected_recommendation_excludes": [
+      "loud"
+    ],
+    "evaluation_notes": "whiteboard or smart notebook"
+  },
+  {
+    "fixture_id": "cs_t192",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_makeup_artist_192",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "community",
+      "stated_preferences": [
+        "brush set"
+      ],
+      "budget_naira": 22000,
+      "occupation": "makeup artist",
+      "purchase_history": [
+        [
+          "fs_020",
+          4.8
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "beauty",
+      "creativity"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "sponge or mirror light"
+  },
+  {
+    "fixture_id": "cs_t193",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_firewood_seller_193",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "axe"
+      ],
+      "budget_naira": 3700,
+      "occupation": "firewood seller",
+      "purchase_history": [
+        [
+          "to_001",
+          4.1
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "premium"
+    ],
+    "evaluation_notes": "sharpener or gloves"
+  },
+  {
+    "fixture_id": "cs_t194",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_port_authority_194",
+      "age_range": "25-44",
+      "location": "Port Harcourt",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "ship wheel decor"
+      ],
+      "budget_naira": 710000,
+      "occupation": "port authority",
+      "purchase_history": [
+        [
+          "jwl_022",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "travel"
+    ],
+    "expected_recommendation_excludes": [
+      "street_food"
+    ],
+    "evaluation_notes": "nautical watch or luxury model ship"
+  },
+  {
+    "fixture_id": "cs_t195",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_dye_maker_195",
+      "age_range": "25-44",
+      "location": "Kano",
+      "archetype": "default",
+      "stated_preferences": [
+        "indigo pot"
+      ],
+      "budget_naira": 47000,
+      "occupation": "dye maker",
+      "purchase_history": [
+        [
+          "ar_008",
+          4.7
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "art",
+      "handmade"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "stir stick or gloves"
+  },
+  {
+    "fixture_id": "cs_t196",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_talking_drummer_196",
+      "age_range": "25-44",
+      "location": "Ibadan",
+      "archetype": "community",
+      "stated_preferences": [
+        "drum stick"
+      ],
+      "budget_naira": 19000,
+      "occupation": "talking drummer",
+      "purchase_history": [
+        [
+          "mu_015",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "heritage"
+    ],
+    "expected_recommendation_excludes": [
+      "nightlife"
+    ],
+    "evaluation_notes": "spare skin or tuning wedge"
+  },
+  {
+    "fixture_id": "cs_t197",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_ice_block_seller_197",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "haggler",
+      "stated_preferences": [
+        "ice pick"
+      ],
+      "budget_naira": 3300,
+      "occupation": "ice block seller",
+      "purchase_history": [
+        [
+          "fd_003",
+          4.2
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "budget",
+      "essential"
+    ],
+    "expected_recommendation_excludes": [
+      "luxury"
+    ],
+    "evaluation_notes": "cooler or scoop"
+  },
+  {
+    "fixture_id": "cs_t198",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_senator_198",
+      "age_range": "25-44",
+      "location": "Abuja",
+      "archetype": "big_woman",
+      "stated_preferences": [
+        "senatorial seal"
+      ],
+      "budget_naira": 1300000,
+      "occupation": "senator",
+      "purchase_history": [
+        [
+          "jwl_012",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "luxury",
+      "prestige"
+    ],
+    "expected_recommendation_excludes": [
+      "street"
+    ],
+    "evaluation_notes": "gold tie pin or luxury document holder"
+  },
+  {
+    "fixture_id": "cs_t199",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_brewmaster_199",
+      "age_range": "25-44",
+      "location": "Owerri",
+      "archetype": "default",
+      "stated_preferences": [
+        "hydrometer"
+      ],
+      "budget_naira": 79000,
+      "occupation": "brewmaster",
+      "purchase_history": [
+        [
+          "fd_018",
+          4.9
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "beverage",
+      "tech"
+    ],
+    "expected_recommendation_excludes": [
+      "faith"
+    ],
+    "evaluation_notes": "siphon or sanitizer"
+  },
+  {
+    "fixture_id": "cs_t200",
+    "scenario": "cross_domain",
+    "user_profile": {
+      "user_id": "cs_fuji_musician_200",
+      "age_range": "25-44",
+      "location": "Lagos",
+      "archetype": "community",
+      "stated_preferences": [
+        "talking drum"
+      ],
+      "budget_naira": 30000,
+      "occupation": "fuji musician",
+      "purchase_history": [
+        [
+          "mu_015",
+          5.0
+        ]
+      ]
+    },
+    "expected_recommendation_contains": [
+      "music",
+      "culture"
+    ],
+    "expected_recommendation_excludes": [
+      "alcohol"
+    ],
+    "evaluation_notes": "agidigbo or percussion set"
+  }
+]

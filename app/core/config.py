@@ -38,6 +38,11 @@ class Settings(BaseSettings):
 
     MAX_TOKENS: int = 1024
 
+    HF_TOKEN: str = Field(
+        default="",
+        description="Hugging Face API Token"
+    )
+
     DEFAULT_USER_BUDGET: float = 0
 
     # Occasion mapping for keyword-based boosting

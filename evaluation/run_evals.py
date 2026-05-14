@@ -8,9 +8,17 @@ import sys
 import numpy as np
 from typing import List, Dict, Tuple
 
-from app.corpus.data.seed_items import SEED_ITEMS
-from app.corpus.data.ground_truth_ratings import GROUND_TRUTH_RATINGS
-from app.corpus.data.cold_start_fixtures import COLD_START_FIXTURES
+# Access consolidated data from Task B corpus
+CORPUS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+if CORPUS_PATH not in sys.path:
+    sys.path.insert(0, CORPUS_PATH)
+
+# Set mock env var for Pydantic validation
+os.environ["OPENROUTER_API_KEYS"] = '["sk-or-v1-placeholder-for-tests"]'
+
+from app.corpus.seed_items import SEED_ITEMS
+from app.corpus.ground_truth_ratings import GROUND_TRUTH_RATINGS
+from app.corpus.cold_start_fixtures import COLD_START_FIXTURES
 
 try:
     from rouge_score import rouge_scorer
