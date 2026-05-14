@@ -9,7 +9,7 @@ class Ranker:
         preferred = [p.lower() for p in analysis.get("preferred_categories", [])]
         priorities = [p.lower() for p in analysis.get("priorities", [])]
         user_interests = [i.lower() for i in (user_persona.interests or [])]
-        budget = user_persona.budget or 10000
+        budget = user_persona.budget or settings.DEFAULT_USER_BUDGET
         archetype = str(user_persona.archetype or "").lower()
         
         for item in candidates:
@@ -73,6 +73,20 @@ class Ranker:
                     if any(k.lower() in item_tags for k in keywords):
                         score += 8.0
                     break
+            
+            # CROSS-DOMAIN BOOSTING
+            # Boost items that bridge to user's known interest domains via cross_domain_tags
+            cross_domain_tags = [t.lower() for t in item.get("cross_domain_tags", [])]
+            if cross_domain_tags:
+                # Find overlap between item's cross_domain_tags and user's preferred_categories
+                domain_overlap = set(cross_domain_tags) & set(preferred)
+                if domain_overlap:
+                    # Boost by 0.8 per overlapping domain
+                    domain_boost = len(domain_overlap) * 0.8
+                    score += domain_boost
+                    # Store reason for later logging
+                    item["_cross_domain_reason"] = list(domain_overlap)
+                    item["_cross_domain_boost"] = domain_boost
             
             scored.append({**item, "score": round(max(0, score), 2)})
         

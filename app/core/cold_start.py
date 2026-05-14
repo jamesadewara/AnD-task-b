@@ -1,11 +1,23 @@
 from typing import List, Dict
 from app.models.schemas import UserPersona
+from app.core.config import settings
+
+# Load cold-start fixtures for validation
+try:
+    from app.corpus.data.cold_start_fixtures import COLD_START_FIXTURES
+    FIXTURES_AVAILABLE = True
+except ImportError:
+    COLD_START_FIXTURES = []
+    FIXTURES_AVAILABLE = False
 
 class ColdStart:
     """Demographic inference using persona signals — works for ANY archetype."""
     
+    def __init__(self):
+        self.fixtures = COLD_START_FIXTURES if FIXTURES_AVAILABLE else []
+    
     def adjust(self, ranked: List[Dict], user_persona: UserPersona) -> List[Dict]:
-        budget = user_persona.budget or 10000
+        budget = user_persona.budget or settings.DEFAULT_USER_BUDGET
         sensitivity = (user_persona.price_sensitivity or "medium").lower()
         interests = [i.lower() for i in user_persona.interests]
         traits = [t.lower() for t in user_persona.traits]
@@ -91,3 +103,48 @@ class ColdStart:
             adjusted.append({**item, "score": new_score})
         
         return sorted(adjusted, key=lambda x: x["score"], reverse=True)
+
+    # Validate against fixtures if this matches a test case
+    def validate_against_fixture(self, user_id: str, recommendations: List[Dict]) -> Dict:
+        """
+        Cross-check recommendations against fixture expectations if user_id matches a fixture.
+        Returns validation dict with pass/fail and reasoning.
+        """
+        if not FIXTURES_AVAILABLE or not self.fixtures:
+            return {"fixture_matched": False, "validation": "Fixtures not available"}
+        
+        matching_fixture = None
+        for fixture in self.fixtures:
+            if fixture.get("user_profile", {}).get("user_id") == user_id:
+                matching_fixture = fixture
+                break
+        
+        if not matching_fixture:
+            return {"fixture_matched": False, "validation": "No matching fixture"}
+        
+        # Get expected categories/items
+        expected_contains = set(matching_fixture.get("expected_recommendation_contains", []))
+        expected_excludes = set(matching_fixture.get("expected_recommendation_excludes", []))
+        
+        # Get actual categories from recommendations
+        actual_categories = set()
+        actual_items = []
+        for rec in recommendations[:10]:
+            actual_categories.add(rec.get("category", "").lower())
+            actual_items.append(rec.get("name", ""))
+        
+        # Validate
+        contains_pass = expected_contains.issubset(actual_categories) if expected_contains else True
+        excludes_pass = not (expected_excludes & actual_categories)
+        
+        return {
+            "fixture_matched": True,
+            "fixture_id": matching_fixture.get("fixture_id"),
+            "expected_categories": list(expected_contains),
+            "actual_categories": list(actual_categories),
+            "contains_pass": contains_pass,
+            "excludes_pass": excludes_pass,
+            "all_pass": contains_pass and excludes_pass,
+            "recommended_items": actual_items,
+            "evaluation_notes": matching_fixture.get("evaluation_notes")
+        }

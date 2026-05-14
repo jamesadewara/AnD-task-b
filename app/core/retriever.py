@@ -2,6 +2,7 @@ import logging
 from typing import List, Dict
 from app.corpus.data.seed_items import SEED_ITEMS
 from app.models.schemas import UserPersona, Context
+from app.core.config import settings
 
 logger = logging.getLogger(__name__)
 
@@ -11,7 +12,7 @@ class Retriever:
         candidates = []
         
         user_interests = [str(i).lower() for i in (user_persona.interests or [])]
-        user_budget = user_persona.budget or 0
+        user_budget = user_persona.budget or settings.DEFAULT_USER_BUDGET
         
         for item in SEED_ITEMS:
             match_score = 0

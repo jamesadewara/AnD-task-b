@@ -29,13 +29,16 @@ class Settings(BaseSettings):
         elif isinstance(v, list):
             return v
         return []
-    LITELLM_MODEL_PRIMARY: str = "z-ai/glm-4.5-air:free"
-    LITELLM_FALLBACK_MODELS: list[str] = [
+    MODEL_PRIMARY: str = "z-ai/glm-4.5-air:free"
+    FALLBACK_MODELS: list[str] = [
         "nvidia/nemotron-3-nano-30b-a3b:free",
-        "google/gemma-4-31b-it:free"
+        "google/gemma-4-31b-it:free",
+        "z-ai/glm-4.5-air:free"
     ]
 
     MAX_TOKENS: int = 1024
+
+    DEFAULT_USER_BUDGET: float = 0
 
     # Occasion mapping for keyword-based boosting
     OCCASION_KEYWORDS: Dict[str, List[str]] = {

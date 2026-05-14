@@ -127,6 +127,31 @@ def check_behavioural_fidelity(past_reviews: List[str], generated_review: str) -
     # In a real system, we might use cosine similarity of embeddings
     return len_sim
 
+def detect_cross_domain(recommendations: List[Dict]) -> Dict[str, any]:
+    """
+    Detects cross-domain recommendations and quantifies domain bridging.
+    Pass/Fail: Count >= 2 recommendations with cross_domain_tags overlap
+    """
+    cross_domain_count = 0
+    bridges = []
+    
+    for rec in recommendations[:10]:
+        cross_tags = rec.get("cross_domain_tags", [])
+        if cross_tags:
+            cross_domain_count += 1
+            bridges.append({
+                "item": rec.get("name", ""),
+                "primary_category": rec.get("category", ""),
+                "cross_domains": cross_tags
+            })
+    
+    return {
+        "total_cross_domain_items": cross_domain_count,
+        "cross_domain_ratio": cross_domain_count / 10.0,
+        "cross_domain_bridges": bridges,
+        "pass": cross_domain_count >= 2
+    }
+
 def run_full_evaluation(generated_data: List[Dict]):
     """
     Main runner to execute all evaluations and print a summary table.

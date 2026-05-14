@@ -110,8 +110,8 @@ class KeyRotationManager:
 
 class LLMService:
     def __init__(self):
-        self.primary_model = settings.LITELLM_MODEL_PRIMARY
-        self.fallback_models = settings.LITELLM_FALLBACK_MODELS
+        self.primary_model = settings.MODEL_PRIMARY
+        self.fallback_models = settings.FALLBACK_MODELS
         
         # Initialize key rotation manager
         self.key_manager = KeyRotationManager(settings.OPENROUTER_API_KEYS)

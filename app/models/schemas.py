@@ -10,7 +10,7 @@ class UserPersona(BaseModel):
     tone: str = "neutral"
     style_sample: Optional[str] = None
     nigerian_context: bool = True
-    budget: float = 10000.0
+    budget: float = 0.0
     price_sensitivity: str = "medium"
     past_reviews: List[Dict] = []
 

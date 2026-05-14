@@ -5,6 +5,7 @@ import traceback
 import asyncio
 from typing import List, Dict, Any
 from loguru import logger
+from app.core.logging import reasoning_ctx
 from app.core.llm import llm_service
 from app.core.retriever import Retriever
 from app.core.ranker import Ranker
@@ -25,10 +26,26 @@ class RecommendAgent:
         self.retriever = Retriever()
         self.ranker = Ranker()
         self.cold_start = ColdStart()
+        self.reasoning_steps = []
+
+    def _log(self, msg: str, step: str = "agent", action: str = "internal_logic", level: str = "INFO"):
+        """Log to loguru and capture as a reasoning step."""
+        if level == "INFO":
+            logger.info(f"[{step}] {msg}")
+        elif level == "WARNING":
+            logger.warning(f"[{step}] {msg}")
+        elif level == "ERROR":
+            logger.error(f"[{step}] {msg}")
+            
+        self.reasoning_steps.append({
+            "step": step,
+            "action": action,
+            "output": msg
+        })
 
     async def cot_reason(self, user_persona: UserPersona, context: Context, candidates: List[Dict], on_fallback=None) -> Dict[str, Any]:
         """Strategic chain-of-thought analysis of the recommendation landscape."""
-        logger.info(f"[RecommendAgent] Step 3: Generating strategic analysis for {user_persona.name}")
+        self._log(f"Generating strategic analysis for {user_persona.name}", step="reason", action="LLM Reasoning")
         principles = load_prompt("behavioral_principles.txt")
         
         prompt = f"""
@@ -73,7 +90,7 @@ Return JSON:
 
     async def generate_item_reasons(self, items: List[Dict], user_persona: UserPersona, context: Context, strategy: Dict, on_fallback=None) -> List[str]:
         """Generates unique, item-specific justifications for the top recommendations."""
-        logger.info(f"[RecommendAgent] Step 7: Generating unique justifications for top items")
+        self._log(f"Generating unique justifications for top items", step="reflect", action="LLM Justification")
         
         reasons = []
         # We'll batch this or generate per item. Batching is faster for LLMs.
@@ -103,6 +120,17 @@ Return JSON array: ["reason1", "reason2", ...]
 
     async def recommend_streaming(self, user_persona: UserPersona, context: Context):
         """Orchestrates the recommendation pipeline with SSE streaming."""
+        
+        # Initialize context-local reasoning list for log capture
+        local_logs = []
+        token = reasoning_ctx.set(local_logs)
+        
+        last_log_idx = 0
+        def get_new_logs():
+            nonlocal last_log_idx
+            new_logs = local_logs[last_log_idx:]
+            last_log_idx = len(local_logs)
+            return new_logs
         
         # Step 1: RETRIEVE
         logger.info(f"[RecommendAgent] Step 1: Retrieving candidates for {user_persona.name}")
@@ -139,6 +167,10 @@ Return JSON array: ["reason1", "reason2", ...]
             "output": f"Ranked {len(ranked)} items using location boosts and archetype-aware pricing."
         }
         yield {"event": "reasoning", "data": step4}
+        
+        # Flush logs after major steps
+        for log in get_new_logs():
+            yield {"event": "reasoning", "data": log}
         
         # Step 5: COLD_START
         cold_start_used = len(user_persona.past_reviews) == 0
@@ -182,11 +214,22 @@ Return JSON array: ["reason1", "reason2", ...]
             "cold_start_used": cold_start_used,
             "cross_domain": cross_domain
         }
+        # Flush any remaining logs
+        for log in get_new_logs():
+            yield {"event": "reasoning", "data": log}
+            
         yield {"event": "final_result", "data": final_result}
+        
+        # Reset context
+        reasoning_ctx.reset(token)
 
     async def recommend(self, user_persona: UserPersona, context: Context) -> Dict[str, Any]:
         """Orchestrates the 1st-place agentic recommendation pipeline."""
         reasoning_chain = []
+        
+        # Initialize context-local reasoning list for log capture
+        local_logs = []
+        token = reasoning_ctx.set(local_logs)
         
         try:
             # Step 1: RETRIEVE
@@ -252,14 +295,110 @@ Return JSON array: ["reason1", "reason2", ...]
                 "output": f"Ensured {len(categories)} distinct categories for cross-domain coverage."
             })
 
-            return {
+            # Extract cross-domain evidence
+            cross_domain_evidence = []
+            for rec in final_recs:
+                if rec.get("_cross_domain_reason"):
+                    cross_domain_evidence.append({
+                        "item": rec.get("name", ""),
+                        "category": rec.get("category", ""),
+                        "bridged_to": rec.get("_cross_domain_reason", []),
+                        "boost_applied": rec.get("_cross_domain_boost", 0.0)
+                    })
+            
+            if cross_domain_evidence:
+                reasoning_chain.append({
+                    "step": "cross_domain_boost",
+                    "action": "Applied cross-domain boosting",
+                    "output": f"Boosted {len(cross_domain_evidence)} items for domain bridging."
+                })
+
+            result_payload = {
                 "recommendations": final_recs,
                 "reasoning_chain": reasoning_chain,
                 "confidence": 0.92 if not cold_start_used else 0.78,
                 "cold_start_used": cold_start_used,
-                "cross_domain": cross_domain
+                "cross_domain": cross_domain,
+                # Return cross-domain evidence
+                "cross_domain_evidence": cross_domain_evidence
             }
+            
+            # Merge captured logs
+            reasoning_chain.extend(local_logs)
+            
+            # Reset context
+            reasoning_ctx.reset(token)
+            
+            return result_payload
         except Exception as e:
             logger.error(f"RECOMMENDATION ERROR: {str(e)}")
             logger.error(traceback.format_exc())
             raise
+
+    async def recommend_flexible(self, payload: Any) -> dict:
+        """Accept flexible input (dict, flat dict, plain text) and generate recommendations.
+
+        Handles all judge payload shapes:
+          - Fully structured: {"user_persona": {...}, "context": {...}}
+          - Flat dict:        {"name": "...", "archetype": "...", "location": "...", ...}
+          - Plain text:       "Recommend something for a party in Lagos"
+          - Partial payload:  any subset of known fields
+        """
+        SCHEMA_BUDGET_DEFAULT = 1000.0  # Match UserPersona schema default (budget = 1000.0)
+
+        # --- 1. Normalise raw payload ---
+        if not isinstance(payload, dict):
+            # Plain-text or bytes body -- wrap as a message
+            message_text = payload.decode() if isinstance(payload, bytes) else str(payload)
+            payload = {"message": message_text}
+
+        # --- 2. Detect payload shape ---
+        # Shape A: fully structured with nested keys
+        if "user_persona" in payload or "context" in payload:
+            user_persona_data = dict(payload.get("user_persona") or {})
+            context_data      = dict(payload.get("context") or {})
+        else:
+            # Shape B: flat dict or free-text message -- map known keys directly
+            PERSONA_KEYS = {"name", "archetype", "budget", "interests", "location",
+                            "past_reviews", "price_sensitivity", "traits", "tone",
+                            "style_sample", "nigerian_context"}
+            CONTEXT_KEYS = {"occasion", "time_of_day", "conversation_history"}
+
+            user_persona_data = {k: v for k, v in payload.items() if k in PERSONA_KEYS}
+            context_data      = {k: v for k, v in payload.items() if k in CONTEXT_KEYS}
+
+            # Pull location into both if present at top level
+            if "location" in payload:
+                user_persona_data.setdefault("location", payload["location"])
+                context_data.setdefault("location", payload["location"])
+
+            # Free-text "message" -- minimal safe defaults (will hit cold-start path)
+            if "message" in payload and not user_persona_data.get("name"):
+                user_persona_data["name"] = "User"
+
+        # --- 3. Apply safe defaults for UserPersona ---
+        user_persona_data.setdefault("name", "User")
+        user_persona_data.setdefault("archetype", "default_consumer")
+        user_persona_data.setdefault("interests", [])
+        user_persona_data.setdefault("location", "Lagos")
+        user_persona_data.setdefault("past_reviews", [])
+        user_persona_data.setdefault("price_sensitivity", "medium")
+        user_persona_data.setdefault("traits", [])
+        user_persona_data.setdefault("tone", "neutral")
+
+        # Budget: only default when missing or explicitly zero/None
+        raw_budget = user_persona_data.get("budget")
+        if not raw_budget:
+            user_persona_data["budget"] = SCHEMA_BUDGET_DEFAULT
+
+        # --- 4. Apply safe defaults for Context ---
+        context_data.setdefault("location", user_persona_data.get("location", "Lagos"))
+        context_data.setdefault("occasion", "Shopping")
+        context_data.setdefault("time_of_day", "Afternoon")
+        context_data.setdefault("conversation_history", [])
+
+        # --- 5. Build schema objects and delegate ---
+        user_persona = UserPersona(**user_persona_data)
+        context      = Context(**context_data)
+
+        return await self.recommend(user_persona, context)
