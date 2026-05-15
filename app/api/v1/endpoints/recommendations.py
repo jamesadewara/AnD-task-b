@@ -5,6 +5,7 @@ import traceback
 from app.schemas.responses import RecommendationResponse, ReasoningStep
 from fastapi.responses import StreamingResponse
 from app.agents.recommend_agent import RecommendAgent
+from app.core.ratelimit import limiter, get_session_id, get_global_key
 
 router = APIRouter()
 
@@ -16,6 +17,9 @@ import json
     summary="Get personalized recommendations (Stateless)",
     description="Accepts any input format/prompt and returns structured recommendation response."
 )
+@limiter.limit("20/minute") # Default key_func is get_remote_address
+@limiter.limit("100/hour", key_func=get_session_id)
+@limiter.limit("500/day", key_func=get_global_key)
 async def get_recommendations(request: Request):
     """Accept any input format and return structured RecommendationResponse."""
     try:

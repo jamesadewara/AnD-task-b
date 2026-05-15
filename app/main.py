@@ -1,9 +1,11 @@
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.gzip import GZipMiddleware
 from loguru import logger
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, JSONResponse
+from slowapi.errors import RateLimitExceeded
+from app.core.ratelimit import limiter
 
 from app.core.config import settings
 from app.core.logging import setup_logging
@@ -39,6 +41,19 @@ app = FastAPI(
     redoc_url=None,
     lifespan=lifespan,
 )
+
+# Attach limiter to state
+app.state.limiter = limiter
+
+@app.exception_handler(RateLimitExceeded)
+async def rate_limit_exceeded_handler(request: Request, exc: RateLimitExceeded):
+    """Custom Nigerian-voice 429 response."""
+    return JSONResponse(
+        status_code=429,
+        content={
+            "detail": "Omo calm down abeg, you dey too fast. \nTry again in a moment."
+        }
+    )
 
 app.add_middleware(
     CORSMiddleware,

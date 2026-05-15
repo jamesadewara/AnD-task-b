@@ -1,3 +1,8 @@
+---
+sdk: docker
+app_port: 7860
+---
+
 # AnD Task B: Personalization & Recommendation Engine
 
 Stateless, agentic recommendation engine for the DSN X BCT LLM Agent Challenge. It leverages real-time reasoning to deliver culturally-grounded recommendations for Nigerian users.

@@ -16,3 +16,4 @@ scikit-learn
 tqdm
 bert-score
 requests
+slowapi
