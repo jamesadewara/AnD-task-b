@@ -30,12 +30,10 @@ Then edit `.env`:
 OPENROUTER_API_KEY=your_key_here
 ```
 
-### 2. Run with Docker
+### 2. Run with Docker Compose
 ```bash
-docker build -t and-task-b .
-docker run -p 8001:8001 --env-file .env and-task-b
+sudo docker compose up -d --build
 ```
-*(Note: Use `docker compose up --build` if you prefer the orchestration layer)*
 
 ## ⚖️ Compliance & Disclosure
 - **LLM**: Strictly uses the official OpenRouter SDK with free model failovers.

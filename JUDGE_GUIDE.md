@@ -3,12 +3,12 @@
 ## Quick Start
 ```bash
 cd AnD-task-b
-docker-compose up -d
+sudo docker compose up -d --build
 ```
 
 ## Health Check
 ```bash
-curl http://localhost:8001/health
+curl http://127.0.0.1:8001/api/v1/health
 ```
 
 ---
