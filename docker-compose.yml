@@ -2,7 +2,7 @@
 services:
   task-b:
     build: 
-      context:
+      context: .
       dockerfile: Dockerfile.dev
     ports:
       - "8001:8001"
